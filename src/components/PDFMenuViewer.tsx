@@ -93,37 +93,40 @@ export default function PDFMenuViewer() {
 
 
           {/* PDF Display */}
-          <div className="relative w-full aspect-[8.5/11] bg-transparent">
-            <iframe
-              src={`/Mr. Baron Billiards Bar.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100`}
-              className="w-full h-full border-0"
-              title="Mr. Baron Billiards Bar Menu"
-              onLoad={() => {
-                console.log('PDF loaded successfully');
-                // Add a small delay to ensure PDF is fully rendered
-                setTimeout(() => {
+          <div className="relative w-full bg-transparent">
+            {/* Mobile-friendly PDF container */}
+            <div className="w-full h-screen sm:h-auto sm:aspect-[8.5/11]">
+              <iframe
+                src={`/Mr. Baron Billiards Bar.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100`}
+                className="w-full h-full border-0"
+                title="Mr. Baron Billiards Bar Menu"
+                onLoad={() => {
+                  console.log('PDF loaded successfully');
+                  // Add a small delay to ensure PDF is fully rendered
+                  setTimeout(() => {
+                    setIsLoading(false);
+                    setHasError(false);
+                  }, 1000); // Increased delay for mobile
+                }}
+                onError={(e) => {
+                  console.error('PDF loading error:', e);
+                  setHasError(true);
                   setIsLoading(false);
-                  setHasError(false);
-                }, 1000); // Increased delay for mobile
-              }}
-              onError={(e) => {
-                console.error('PDF loading error:', e);
-                setHasError(true);
-                setIsLoading(false);
-              }}
-              onLoadStart={() => {
-                console.log('PDF loading started');
-                setIsLoading(true);
-              }}
-
-              style={{
-                userSelect: 'none',
-                WebkitUserSelect: 'none',
-                MozUserSelect: 'none',
-                msUserSelect: 'none',
-                minHeight: '600px'
-              }}
-            />
+                }}
+                onLoadStart={() => {
+                  console.log('PDF loading started');
+                  setIsLoading(true);
+                }}
+                style={{
+                  userSelect: 'none',
+                  WebkitUserSelect: 'none',
+                  MozUserSelect: 'none',
+                  msUserSelect: 'none',
+                  minHeight: '100vh',
+                  maxHeight: '100vh'
+                }}
+              />
+            </div>
 
 
             {/* Loading overlay */}
