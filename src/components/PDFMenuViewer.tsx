@@ -97,7 +97,7 @@ export default function PDFMenuViewer() {
             {/* Mobile-friendly PDF container */}
             <div className="w-full h-screen sm:h-auto sm:aspect-[8.5/11]">
               <iframe
-                src={`/Mr. Baron Billiards Bar.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0&view=FitH&zoom=100`}
+                src={`/Mr. Baron Billiards Bar.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit`}
                 className="w-full h-full border-0"
                 title="Mr. Baron Billiards Bar Menu"
                 onLoad={() => {
@@ -123,7 +123,9 @@ export default function PDFMenuViewer() {
                   MozUserSelect: 'none',
                   msUserSelect: 'none',
                   minHeight: '100vh',
-                  maxHeight: '100vh'
+                  maxHeight: '100vh',
+                  overflow: 'auto',
+                  WebkitOverflowScrolling: 'touch'
                 }}
               />
             </div>
@@ -206,6 +208,22 @@ export default function PDFMenuViewer() {
                   @keyframes bounce {
                     0%, 80%, 100% { transform: scale(0); }
                     40% { transform: scale(1); }
+                  }
+                  
+                  /* Mobile PDF scrolling fix */
+                  iframe {
+                    -webkit-overflow-scrolling: touch;
+                    overflow: auto;
+                    height: 100vh !important;
+                    width: 100% !important;
+                  }
+                  
+                  @media (max-width: 768px) {
+                    iframe {
+                      height: 100vh !important;
+                      min-height: 100vh !important;
+                      max-height: none !important;
+                    }
                   }
                 `}</style>
               </div>
