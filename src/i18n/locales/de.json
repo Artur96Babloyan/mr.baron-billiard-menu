@@ -1,0 +1,150 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "menu": "Menü",
+    "about": "Über uns"
+  },
+  "homepage": {
+    "title": "Mr. Baron Billard Bar",
+    "subtitle": "Wo Champions Spielen",
+    "welcome": "Willkommen zur besten Billard-Erfahrung in der Stadt",
+    "description": "Genießen Sie Premium-Getränke, köstliche Snacks und die beste Billard-Atmosphäre. Perfekt für lockere Spiele oder Wettkampfturniere.",
+    "viewMenu": "Menü anzeigen"
+  },
+  "features": {
+    "premiumTables": {
+      "title": "Premium-Tische",
+      "description": "Professionelle Billardtische für das beste Spielerlebnis"
+    },
+    "craftCocktails": {
+      "title": "Craft-Cocktails",
+      "description": "Expertenhaft gemischte Getränke und Premium-Spirituosen"
+    },
+    "tournaments": {
+      "title": "Turniere",
+      "description": "Regelmäßige Turniere und Wettkampfspiel"
+    }
+  },
+  "menu": {
+    "title": "Unser Menü",
+    "categories": {
+      "drinks": "Getränke",
+      "snacks": "Snacks",
+      "specials": "Angebote"
+    },
+    "drinks": {
+      "cocktails": "Cocktails",
+      "beer": "Bier",
+      "wine": "Wein",
+      "whiskey": "Whisky",
+      "nonAlcoholic": "Alkoholfrei"
+    }
+  },
+  "specials": {
+    "happyHour": {
+      "title": "Happy Hour",
+      "description": "50% Rabatt auf alle Getränke (16-19 Uhr täglich)",
+      "discount": "50% RABATT"
+    }
+  },
+  "items": {
+    "cocktails": {
+      "moscowMule": {
+        "name": "Moscow Mule",
+        "description": "Wodka, Ingwerbier, Limettensaft",
+        "price": "$12"
+      },
+      "oldFashioned": {
+        "name": "Old Fashioned",
+        "description": "Bourbon, Bitters, Zuckerwürfel",
+        "price": "$14"
+      },
+      "margarita": {
+        "name": "Margarita",
+        "description": "Tequila, Triple Sec, Limettensaft",
+        "price": "$13"
+      },
+      "manhattan": {
+        "name": "Manhattan",
+        "description": "Whiskey, sweet vermouth, bitters",
+        "price": "$15"
+      },
+      "negroni": {
+        "name": "Negroni",
+        "description": "Gin, Campari, sweet vermouth",
+        "price": "$14"
+      },
+      "martini": {
+        "name": "Classic Martini",
+        "description": "Gin, dry vermouth, olive or twist",
+        "price": "$16"
+      }
+    },
+    "beer": {
+      "craftLager": {
+        "name": "Craft Lager",
+        "description": "Lokales Craft-Bier",
+        "price": "$8"
+      },
+      "ipa": {
+        "name": "IPA",
+        "description": "Hopfiges Craft-Bier",
+        "price": "$9"
+      },
+      "stout": {
+        "name": "Dark Stout",
+        "description": "Rich, creamy stout",
+        "price": "$10"
+      },
+      "wheat": {
+        "name": "Wheat Beer",
+        "description": "Light, refreshing wheat beer",
+        "price": "$8"
+      }
+    },
+    "wine": {
+      "red": {
+        "name": "House Red",
+        "description": "Cabernet Sauvignon",
+        "price": "$12"
+      },
+      "white": {
+        "name": "House White",
+        "description": "Chardonnay",
+        "price": "$11"
+      },
+      "rose": {
+        "name": "Rosé",
+        "description": "Light, crisp rosé",
+        "price": "$10"
+      }
+    },
+    "snacks": {
+      "nachos": {
+        "name": "Nachos",
+        "description": "Tortilla-Chips mit Käse und Salsa",
+        "price": "$10"
+      },
+      "wings": {
+        "name": "Buffalo Wings",
+        "description": "Scharfe Hühnerflügel",
+        "price": "$12"
+      },
+      "sliders": {
+        "name": "Beef Sliders",
+        "description": "Mini burgers with fries",
+        "price": "$14"
+      },
+      "fries": {
+        "name": "Truffle Fries",
+        "description": "Crispy fries with truffle oil",
+        "price": "$8"
+      },
+      "pretzel": {
+        "name": "Soft Pretzel",
+        "description": "Warm pretzel with mustard",
+        "price": "$6"
+      }
+    }
+  }
+}

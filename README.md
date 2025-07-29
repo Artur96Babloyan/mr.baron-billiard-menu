@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mr. Baron Billiards Bar Website
+
+A professional multilingual website for Mr. Baron Billiards Bar built with Next.js, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🌍 **Multilingual Support**: English, Russian, Armenian, Spanish, German, Italian, Chinese
+- 📱 **Responsive Design**: Works perfectly on mobile and desktop
+- 🎨 **Professional Design**: Dark green and beige color palette inspired by billiard bars
+- 🍸 **Menu System**: Organized categories for drinks, snacks, and specials
+- 🔍 **SEO Optimized**: Meta tags and structured content for search engines
+- ⚡ **Fast Performance**: Built with Next.js App Router for optimal performance
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Internationalization**: next-intl
+- **Deployment**: Ready for Vercel, Netlify, or any static hosting
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── [locale]/
+│   │   ├── layout.tsx      # Locale-specific layout
+│   │   ├── page.tsx        # Homepage
+│   │   └── menu/
+│   │       └── page.tsx    # Menu page
+│   ├── globals.css         # Global styles
+│   ├── layout.tsx          # Root layout
+│   └── page.tsx            # Root redirect
+├── components/
+│   ├── Navbar.tsx          # Navigation component
+│   └── MenuItem.tsx        # Menu item component
+├── i18n/
+│   ├── config.ts           # Locale configuration
+│   ├── index.ts            # i18n setup
+│   └── locales/            # Translation files
+│       ├── en.json
+│       ├── ru.json
+│       ├── hy.json
+│       ├── es.json
+│       ├── de.json
+│       ├── it.json
+│       └── zh.json
+└── middleware.ts           # Internationalization middleware
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Adding New Content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Adding Menu Items
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Update the translation files in `src/i18n/locales/`
+2. Add new items to the menu structure
+3. Update the MenuPage component to display new items
 
-## Learn More
+### Adding New Languages
 
-To learn more about Next.js, take a look at the following resources:
+1. Create a new translation file in `src/i18n/locales/`
+2. Add the locale to the `locales` array in `src/i18n/config.ts`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Adding New Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Create a new page in `src/app/[locale]/`
+2. Add navigation links in the Navbar component
+3. Update translation files with new content
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The website is ready for deployment on any static hosting platform:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Vercel**: Connect your GitHub repository
+- **Netlify**: Drag and drop the build folder
+- **GitHub Pages**: Use the `gh-pages` branch
+
+## Customization
+
+### Colors
+
+The color palette is defined in `tailwind.config.ts`:
+- `billiard-green`: Various shades of green
+- `billiard-amber`: Various shades of amber/beige
+
+### Styling
+
+All styles use Tailwind CSS classes. The design follows a dark theme with:
+- Background: Dark green gradient
+- Text: Amber/beige colors
+- Accents: Amber highlights
+
+## License
+
+This project is open source and available under the MIT License.

@@ -1,0 +1,150 @@
+{
+  "navigation": {
+    "home": "Главная",
+    "menu": "Меню",
+    "about": "О нас"
+  },
+  "homepage": {
+    "title": "Бильярдный бар Мистера Барона",
+    "subtitle": "Где играют чемпионы",
+    "welcome": "Добро пожаловать в лучший бильярдный опыт в городе",
+    "description": "Насладитесь премиальными напитками, вкусными закусками и лучшей бильярдной атмосферой. Идеально для casual игр или соревновательных турниров.",
+    "viewMenu": "Посмотреть меню"
+  },
+  "features": {
+    "premiumTables": {
+      "title": "Премиум столы",
+      "description": "Профессиональные бильярдные столы для лучшего игрового опыта"
+    },
+    "craftCocktails": {
+      "title": "Крафтовые коктейли",
+      "description": "Экспертно смешанные напитки и премиальные спиртные напитки"
+    },
+    "tournaments": {
+      "title": "Турниры",
+      "description": "Регулярные турниры и соревновательная игра"
+    }
+  },
+  "menu": {
+    "title": "Наше меню",
+    "categories": {
+      "drinks": "Напитки",
+      "snacks": "Закуски",
+      "specials": "Специальные предложения"
+    },
+    "drinks": {
+      "cocktails": "Коктейли",
+      "beer": "Пиво",
+      "wine": "Вино",
+      "whiskey": "Виски",
+      "nonAlcoholic": "Безалкогольные"
+    }
+  },
+  "specials": {
+    "happyHour": {
+      "title": "Счастливые часы",
+      "description": "50% скидка на все напитки (16:00-19:00 ежедневно)",
+      "discount": "50% СКИДКА"
+    }
+  },
+  "items": {
+    "cocktails": {
+      "moscowMule": {
+        "name": "Московский мул",
+        "description": "Водка, имбирное пиво, сок лайма",
+        "price": "$12"
+      },
+      "oldFashioned": {
+        "name": "Олд фешенд",
+        "description": "Бурбон, биттеры, сахарный кубик",
+        "price": "$14"
+      },
+      "margarita": {
+        "name": "Маргарита",
+        "description": "Текила, трипл сек, сок лайма",
+        "price": "$13"
+      },
+      "manhattan": {
+        "name": "Manhattan",
+        "description": "Whiskey, sweet vermouth, bitters",
+        "price": "$15"
+      },
+      "negroni": {
+        "name": "Negroni",
+        "description": "Gin, Campari, sweet vermouth",
+        "price": "$14"
+      },
+      "martini": {
+        "name": "Classic Martini",
+        "description": "Gin, dry vermouth, olive or twist",
+        "price": "$16"
+      }
+    },
+    "beer": {
+      "craftLager": {
+        "name": "Крафтовое лагер",
+        "description": "Местное крафтовое пиво",
+        "price": "$8"
+      },
+      "ipa": {
+        "name": "IPA",
+        "description": "Хмельное крафтовое пиво",
+        "price": "$9"
+      },
+      "stout": {
+        "name": "Dark Stout",
+        "description": "Rich, creamy stout",
+        "price": "$10"
+      },
+      "wheat": {
+        "name": "Wheat Beer",
+        "description": "Light, refreshing wheat beer",
+        "price": "$8"
+      }
+    },
+    "wine": {
+      "red": {
+        "name": "House Red",
+        "description": "Cabernet Sauvignon",
+        "price": "$12"
+      },
+      "white": {
+        "name": "House White",
+        "description": "Chardonnay",
+        "price": "$11"
+      },
+      "rose": {
+        "name": "Rosé",
+        "description": "Light, crisp rosé",
+        "price": "$10"
+      }
+    },
+    "snacks": {
+      "nachos": {
+        "name": "Начос",
+        "description": "Тортилья с сыром и сальсой",
+        "price": "$10"
+      },
+      "wings": {
+        "name": "Крылышки Баффало",
+        "description": "Острые куриные крылышки",
+        "price": "$12"
+      },
+      "sliders": {
+        "name": "Beef Sliders",
+        "description": "Mini burgers with fries",
+        "price": "$14"
+      },
+      "fries": {
+        "name": "Truffle Fries",
+        "description": "Crispy fries with truffle oil",
+        "price": "$8"
+      },
+      "pretzel": {
+        "name": "Soft Pretzel",
+        "description": "Warm pretzel with mustard",
+        "price": "$6"
+      }
+    }
+  }
+}

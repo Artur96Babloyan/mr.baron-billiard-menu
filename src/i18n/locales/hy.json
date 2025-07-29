@@ -1,0 +1,150 @@
+{
+  "navigation": {
+    "home": "Գլխավոր",
+    "menu": "Մենյու",
+    "about": "Մեր մասին"
+  },
+  "homepage": {
+    "title": "Միստր Բարոնի Բիլիարդի Բար",
+    "subtitle": "Որտեղ Խաղում են Չեմպիոնները",
+    "welcome": "Բարի գալուստ քաղաքի լավագույն բիլիարդի փորձառություն",
+    "description": "Վայելեք պրեմիում ըմպելիքներ, համեղ նախուտեստներ և լավագույն բիլիարդի մթնոլորտ: Կատարյալ է պատահական խաղերի կամ մրցակցային մրցաշարերի համար:",
+    "viewMenu": "Տեսնել Մենյու"
+  },
+  "features": {
+    "premiumTables": {
+      "title": "Պրեմիում Սեղաններ",
+      "description": "Մասնագիտական բիլիարդի սեղաններ լավագույն խաղային փորձառության համար"
+    },
+    "craftCocktails": {
+      "title": "Ձեռքի Կոկտեյլներ",
+      "description": "Փորձագետների կողմից խառնված ըմպելիքներ և պրեմիում ալկոհոլ"
+    },
+    "tournaments": {
+      "title": "Մրցաշարեր",
+      "description": "Կանոնավոր մրցաշարեր և մրցակցային խաղ"
+    }
+  },
+  "menu": {
+    "title": "Մեր Մենյուն",
+    "categories": {
+      "drinks": "Ըմպելիքներ",
+      "snacks": "Նախուտեստներ",
+      "specials": "Հատուկ առաջարկներ"
+    },
+    "drinks": {
+      "cocktails": "Կոկտեյլներ",
+      "beer": "Գարեջուր",
+      "wine": "Գինի",
+      "whiskey": "Վիսկի",
+      "nonAlcoholic": "Ալկոհոլազերծ"
+    }
+  },
+  "specials": {
+    "happyHour": {
+      "title": "Երջանիկ Ժամ",
+      "description": "50% զեղչ բոլոր ըմպելիքների վրա (16:00-19:00 ամեն օր)",
+      "discount": "50% ԶԵՂՉ"
+    }
+  },
+  "items": {
+    "cocktails": {
+      "moscowMule": {
+        "name": "Մոսկովյան շնիկ",
+        "description": "Վոդկա, կոճապղպեղի գարեջուր, կիտրոնի հյութ",
+        "price": "$12"
+      },
+      "oldFashioned": {
+        "name": "Հին Ֆեշն",
+        "description": "Բուրբոն, բիտտերներ, շաքարի խորանարդ",
+        "price": "$14"
+      },
+      "margarita": {
+        "name": "Մարգարիտա",
+        "description": "Տեկիլա, տրիպլ սեկ, կիտրոնի հյութ",
+        "price": "$13"
+      },
+      "manhattan": {
+        "name": "Manhattan",
+        "description": "Whiskey, sweet vermouth, bitters",
+        "price": "$15"
+      },
+      "negroni": {
+        "name": "Negroni",
+        "description": "Gin, Campari, sweet vermouth",
+        "price": "$14"
+      },
+      "martini": {
+        "name": "Classic Martini",
+        "description": "Gin, dry vermouth, olive or twist",
+        "price": "$16"
+      }
+    },
+    "beer": {
+      "craftLager": {
+        "name": "Ձեռքի Լագեր",
+        "description": "Տեղական ձեռքի գարեջուր",
+        "price": "$8"
+      },
+      "ipa": {
+        "name": "IPA",
+        "description": "Հոփով ձեռքի գարեջուր",
+        "price": "$9"
+      },
+      "stout": {
+        "name": "Dark Stout",
+        "description": "Rich, creamy stout",
+        "price": "$10"
+      },
+      "wheat": {
+        "name": "Wheat Beer",
+        "description": "Light, refreshing wheat beer",
+        "price": "$8"
+      }
+    },
+    "wine": {
+      "red": {
+        "name": "House Red",
+        "description": "Cabernet Sauvignon",
+        "price": "$12"
+      },
+      "white": {
+        "name": "House White",
+        "description": "Chardonnay",
+        "price": "$11"
+      },
+      "rose": {
+        "name": "Rosé",
+        "description": "Light, crisp rosé",
+        "price": "$10"
+      }
+    },
+    "snacks": {
+      "nachos": {
+        "name": "Նաչոս",
+        "description": "Տորտիլա չիպսեր պանրով և սալսայով",
+        "price": "$10"
+      },
+      "wings": {
+        "name": "Բուֆալոյի Թևեր",
+        "description": "Թթու հավի թևեր",
+        "price": "$12"
+      },
+      "sliders": {
+        "name": "Beef Sliders",
+        "description": "Mini burgers with fries",
+        "price": "$14"
+      },
+      "fries": {
+        "name": "Truffle Fries",
+        "description": "Crispy fries with truffle oil",
+        "price": "$8"
+      },
+      "pretzel": {
+        "name": "Soft Pretzel",
+        "description": "Warm pretzel with mustard",
+        "price": "$6"
+      }
+    }
+  }
+}
