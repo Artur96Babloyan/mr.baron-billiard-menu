@@ -1,9 +1,15 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import MenuTitle from './MenuTitle';
 
 export default function MenuImageViewer() {
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
+
+  const handleImageLoad = (index: number) => {
+    setLoadedImages(prev => new Set([...prev, index]));
+  };
 
   const menuImages = [
     '/menuImages/Mr. Baron Billiards Bar-1.png',
@@ -45,16 +51,32 @@ export default function MenuImageViewer() {
         <div className="space-y-[3px]">
           {menuImages.map((image, index) => (
             <div key={index} className="flex justify-center items-center py-[3px]">
-              <div className="w-full mx-1 sm:mx-2 md:mx-4 lg:mx-6 xl:mx-18">
+              <div className="w-full mx-1 sm:mx-2 md:mx-4 lg:mx-6 xl:mx-18 relative">
+                {/* Loading Placeholder */}
+                {!loadedImages.has(index) && (
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-200/20 to-gray-300/20 backdrop-blur-sm rounded-lg animate-pulse">
+                    <div className="flex items-center justify-center h-full">
+                      <div className="text-center">
+                        <div className="w-16 h-16 mx-auto mb-4 bg-white/30 rounded-full flex items-center justify-center">
+                          <div className="w-8 h-8 border-2 border-white/50 border-t-transparent rounded-full animate-spin"></div>
+                        </div>
+                        <div className="text-white/60 text-sm font-medium">Loading Menu...</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 <Image
                   src={image}
                   alt={`Mr. Baron Menu Page ${index + 1}`}
                   width={800}
                   height={1000}
-                  className="w-full h-auto object-contain"
+                  className={`w-full h-auto object-contain transition-opacity duration-500 ${loadedImages.has(index) ? 'opacity-100' : 'opacity-0'
+                    }`}
                   priority={index === 0}
                   quality={85}
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
+                  onLoad={() => handleImageLoad(index)}
                 />
               </div>
             </div>
