@@ -9,7 +9,7 @@ export default async function HomePage({
   await params; // Ensure params is awaited but we don't need locale here
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-950 via-green-900 to-green-800 relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden">
       <Navbar />
       <HomeContent />
     </div>
