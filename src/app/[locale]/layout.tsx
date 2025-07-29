@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
+import { getMessages } from 'next-intl/server';
 import { locales } from '@/i18n/config';
 
 export async function generateStaticParams() {
@@ -14,9 +14,6 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-
-  // Enable static rendering
-  unstable_setRequestLocale(locale);
 
   const messages = await getMessages();
 

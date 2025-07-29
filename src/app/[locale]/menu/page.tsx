@@ -1,4 +1,3 @@
-import { unstable_setRequestLocale } from 'next-intl/server';
 import MenuContent from '@/components/MenuContent';
 import Navbar from '@/components/Navbar';
 
@@ -7,16 +6,10 @@ export default async function MenuPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  unstable_setRequestLocale(locale);
+  await params; // Ensure params is awaited but we don't need locale here
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-950 via-green-900 to-green-800 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(245,158,11,0.1),transparent_50%)]"></div>
-      </div>
-
       <Navbar />
 
       {/* Menu Header */}
