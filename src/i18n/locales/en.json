@@ -27,8 +27,9 @@
   },
   "menu": {
     "title": "Our Menu",
-    "brandTitle": "Mr.Baron",
+    "brandTitle": "Mr. Baron",
     "brandSubtitle": "COCKTAILS + BEER",
+    "scrollHint": "scroll to see menu",
     "categories": {
       "drinks": "Drinks",
       "snacks": "Snacks",

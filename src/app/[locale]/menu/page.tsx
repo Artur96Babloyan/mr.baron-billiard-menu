@@ -1,4 +1,4 @@
-import PDFMenuViewer from '@/components/PDFMenuViewer';
+import MenuImageViewer from '@/components/MenuImageViewer';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 
@@ -27,7 +27,7 @@ export default async function MenuPage({
 
       <Navbar />
 
-      <PDFMenuViewer />
+      <MenuImageViewer />
     </div>
   );
 }
