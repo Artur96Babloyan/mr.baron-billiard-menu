@@ -27,6 +27,8 @@
   },
   "menu": {
     "title": "Our Menu",
+    "brandTitle": "Mr.Baron Menu",
+    "brandSubtitle": "COCKTAILS + BEER + FOOD",
     "categories": {
       "drinks": "Drinks",
       "snacks": "Snacks",
@@ -38,6 +40,112 @@
       "wine": "Wine",
       "whiskey": "Whiskey",
       "nonAlcoholic": "Non-Alcoholic"
+    },
+    "sections": {
+      "onTap": {
+        "title": "BEER",
+        "imageAlt": "Craft Beers - On Tap",
+        "imageTitle": "Craft Beers",
+        "imageSubtitle": "Premium selection",
+        "items": [
+          {
+            "name": "DOGFISH HEAD 60 MINUTE IPA",
+            "location": "Milton, DE",
+            "price": "$6"
+          },
+          {
+            "name": "EAST END FAT GARY NUT BROWN ALE",
+            "location": "Pittsburgh, PA",
+            "price": "$6.5"
+          },
+          {
+            "name": "GREAT WHITE ALE",
+            "location": "Craft Beer",
+            "price": "$5.5"
+          },
+          {
+            "name": "ROGUE ALES SHAKESPEARE OATMEAL STOUT",
+            "location": "Oregon, USA",
+            "price": "$7"
+          },
+          {
+            "name": "FAT TIRE AMBER ALE",
+            "location": "Colorado, USA",
+            "price": "$6"
+          },
+          {
+            "name": "GUINNESS STOUT",
+            "location": "Ireland",
+            "price": "$6.5"
+          }
+        ]
+      },
+      "cocktails": {
+        "title": "COCKTAILS",
+        "imageAlt": "Craft Cocktails",
+        "imageTitle": "Craft Cocktails",
+        "imageSubtitle": "Handcrafted perfection",
+        "items": [
+          {
+            "name": "MAD DOG",
+            "description": "Tequila, crème de banana, white crème de cacao and fresh lime juice",
+            "price": "$8"
+          },
+          {
+            "name": "GODFATHER",
+            "description": "Scotch single malt and amaretto",
+            "price": "$9"
+          },
+          {
+            "name": "PISCO SOUR",
+            "description": "Pisco, lime juice, egg white, simple syrup",
+            "price": "$10"
+          },
+          {
+            "name": "LA VIE EN ROSE",
+            "description": "Gin, rose liqueur, elderflower, prosecco",
+            "price": "$11"
+          },
+          {
+            "name": "MELON BOWL",
+            "description": "Vodka, melon liqueur, fresh watermelon juice",
+            "price": "$9"
+          },
+          {
+            "name": "ULTIMATE MARGARITA",
+            "description": "Premium tequila, fresh lime, triple sec",
+            "price": "$12"
+          }
+        ]
+      },
+      "food": {
+        "title": "FOOD",
+        "imageAlt": "Bar Snacks & Food",
+        "imageTitle": "Bar Snacks",
+        "imageSubtitle": "Delicious bites",
+        "items": [
+          {
+            "name": "TRUFFLE FRIES",
+            "description": "Crispy fries with truffle oil and parmesan",
+            "price": "$8"
+          },
+          {
+            "name": "BEEF SLIDERS",
+            "description": "Mini burgers with fries",
+            "price": "$14"
+          },
+          {
+            "name": "BUFFALO WINGS",
+            "description": "Spicy wings with blue cheese",
+            "price": "$12"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "title": "Visit Us Today",
+      "description": "Experience the perfect blend of premium billiards and exceptional service",
+      "features": ["Premium Tables", "Craft Cocktails", "Tournaments"]
     }
   },
   "specials": {

@@ -5,8 +5,8 @@
     "about": "Acerca de"
   },
   "homepage": {
-    "title": "Bar de Billar Mr. Baron",
-    "subtitle": "Donde Juegan los Campeones",
+    "title": "Mr. Baron Billiards Bar",
+    "subtitle": "Donde juegan los campeones",
     "welcome": "Bienvenido a la mejor experiencia de billar en la ciudad",
     "description": "Disfruta de bebidas premium, deliciosos aperitivos y la mejor atmósfera de billar. Perfecto para juegos casuales o torneos competitivos.",
     "viewMenu": "Ver Menú"
@@ -18,7 +18,7 @@
     },
     "craftCocktails": {
       "title": "Cócteles Artesanales",
-      "description": "Bebidas mezcladas por expertos y licores premium"
+      "description": "Bebidas mezcladas por expertos y espíritus premium"
     },
     "tournaments": {
       "title": "Torneos",
@@ -27,6 +27,8 @@
   },
   "menu": {
     "title": "Nuestro Menú",
+    "brandTitle": "Menú Mr.Baron",
+    "brandSubtitle": "CÓCTELES + CERVEZA + COMIDA",
     "categories": {
       "drinks": "Bebidas",
       "snacks": "Aperitivos",
@@ -38,6 +40,112 @@
       "wine": "Vino",
       "whiskey": "Whisky",
       "nonAlcoholic": "Sin Alcohol"
+    },
+    "sections": {
+      "onTap": {
+        "title": "CERVEZA",
+        "imageAlt": "Cervezas Artesanales - De Barril",
+        "imageTitle": "Cervezas Artesanales",
+        "imageSubtitle": "Selección premium",
+        "items": [
+          {
+            "name": "DOGFISH HEAD 60 MINUTE IPA",
+            "location": "Milton, Delaware",
+            "price": "$6"
+          },
+          {
+            "name": "EAST END FAT GARY NUT BROWN ALE",
+            "location": "Pittsburgh, Pensilvania",
+            "price": "$6.5"
+          },
+          {
+            "name": "GREAT WHITE ALE",
+            "location": "Cerveza Artesanal",
+            "price": "$5.5"
+          },
+          {
+            "name": "ROGUE ALES SHAKESPEARE OATMEAL STOUT",
+            "location": "Oregón, EE.UU.",
+            "price": "$7"
+          },
+          {
+            "name": "FAT TIRE AMBER ALE",
+            "location": "Colorado, EE.UU.",
+            "price": "$6"
+          },
+          {
+            "name": "GUINNESS STOUT",
+            "location": "Irlanda",
+            "price": "$6.5"
+          }
+        ]
+      },
+      "cocktails": {
+        "title": "CÓCTELES",
+        "imageAlt": "Cócteles Artesanales",
+        "imageTitle": "Cócteles Artesanales",
+        "imageSubtitle": "Perfección hecha a mano",
+        "items": [
+          {
+            "name": "MAD DOG",
+            "description": "Tequila, crema de plátano, crema de cacao blanca y jugo de limón fresco",
+            "price": "$8"
+          },
+          {
+            "name": "GODFATHER",
+            "description": "Scotch single malt y amaretto",
+            "price": "$9"
+          },
+          {
+            "name": "PISCO SOUR",
+            "description": "Pisco, jugo de limón, clara de huevo, jarabe simple",
+            "price": "$10"
+          },
+          {
+            "name": "LA VIE EN ROSE",
+            "description": "Ginebra, licor de rosas, saúco, prosecco",
+            "price": "$11"
+          },
+          {
+            "name": "MELON BOWL",
+            "description": "Vodka, licor de melón, jugo fresco de sandía",
+            "price": "$9"
+          },
+          {
+            "name": "ULTIMATE MARGARITA",
+            "description": "Tequila premium, limón fresco, triple sec",
+            "price": "$12"
+          }
+        ]
+      },
+      "food": {
+        "title": "COMIDA",
+        "imageAlt": "Aperitivos de Bar y Comida",
+        "imageTitle": "Aperitivos de Bar",
+        "imageSubtitle": "Bocados deliciosos",
+        "items": [
+          {
+            "name": "PAPAS TRUFADAS",
+            "description": "Papas crujientes con aceite de trufa y parmesano",
+            "price": "$8"
+          },
+          {
+            "name": "SLIDERS DE RES",
+            "description": "Mini hamburguesas con papas",
+            "price": "$14"
+          },
+          {
+            "name": "ALITAS BUFFALO",
+            "description": "Alitas picantes con queso azul",
+            "price": "$12"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "title": "Visítanos Hoy",
+      "description": "Experimenta la perfecta combinación de billar premium y servicio excepcional",
+      "features": ["Mesas Premium", "Cócteles Artesanales", "Torneos"]
     }
   },
   "specials": {
@@ -66,17 +174,17 @@
       },
       "manhattan": {
         "name": "Manhattan",
-        "description": "Whiskey, sweet vermouth, bitters",
+        "description": "Whisky, vermut dulce, bitters",
         "price": "$15"
       },
       "negroni": {
         "name": "Negroni",
-        "description": "Gin, Campari, sweet vermouth",
+        "description": "Ginebra, Campari, vermut dulce",
         "price": "$14"
       },
       "martini": {
-        "name": "Classic Martini",
-        "description": "Gin, dry vermouth, olive or twist",
+        "name": "Martini Clásico",
+        "description": "Ginebra, vermut seco, aceituna o cáscara",
         "price": "$16"
       }
     },
@@ -92,37 +200,37 @@
         "price": "$9"
       },
       "stout": {
-        "name": "Dark Stout",
-        "description": "Rich, creamy stout",
+        "name": "Stout Oscuro",
+        "description": "Stout rico y cremoso",
         "price": "$10"
       },
       "wheat": {
-        "name": "Wheat Beer",
-        "description": "Light, refreshing wheat beer",
+        "name": "Cerveza de Trigo",
+        "description": "Cerveza de trigo ligera y refrescante",
         "price": "$8"
       }
     },
     "wine": {
       "red": {
-        "name": "House Red",
+        "name": "Vino Tinto de la Casa",
         "description": "Cabernet Sauvignon",
         "price": "$12"
       },
       "white": {
-        "name": "House White",
+        "name": "Vino Blanco de la Casa",
         "description": "Chardonnay",
         "price": "$11"
       },
       "rose": {
-        "name": "Rosé",
-        "description": "Light, crisp rosé",
+        "name": "Rosado",
+        "description": "Rosado ligero y fresco",
         "price": "$10"
       }
     },
     "snacks": {
       "nachos": {
         "name": "Nachos",
-        "description": "Tortillas con queso y salsa",
+        "description": "Tortilla chips con queso y salsa",
         "price": "$10"
       },
       "wings": {
@@ -131,18 +239,18 @@
         "price": "$12"
       },
       "sliders": {
-        "name": "Beef Sliders",
-        "description": "Mini burgers with fries",
+        "name": "Sliders de Res",
+        "description": "Mini hamburguesas con papas",
         "price": "$14"
       },
       "fries": {
-        "name": "Truffle Fries",
-        "description": "Crispy fries with truffle oil",
+        "name": "Papas Trufadas",
+        "description": "Papas crujientes con aceite de trufa",
         "price": "$8"
       },
       "pretzel": {
-        "name": "Soft Pretzel",
-        "description": "Warm pretzel with mustard",
+        "name": "Pretzel Suave",
+        "description": "Pretzel caliente con mostaza",
         "price": "$6"
       }
     }

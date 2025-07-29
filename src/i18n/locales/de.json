@@ -5,8 +5,8 @@
     "about": "Über uns"
   },
   "homepage": {
-    "title": "Mr. Baron Billard Bar",
-    "subtitle": "Wo Champions Spielen",
+    "title": "Mr. Baron Billiards Bar",
+    "subtitle": "Wo Champions spielen",
     "welcome": "Willkommen zur besten Billard-Erfahrung in der Stadt",
     "description": "Genießen Sie Premium-Getränke, köstliche Snacks und die beste Billard-Atmosphäre. Perfekt für lockere Spiele oder Wettkampfturniere.",
     "viewMenu": "Menü anzeigen"
@@ -22,15 +22,17 @@
     },
     "tournaments": {
       "title": "Turniere",
-      "description": "Regelmäßige Turniere und Wettkampfspiel"
+      "description": "Regelmäßige Turniere und Wettkampfspiele"
     }
   },
   "menu": {
     "title": "Unser Menü",
+    "brandTitle": "Mr.Baron Menü",
+    "brandSubtitle": "COCKTAILS + BIER + ESSEN",
     "categories": {
       "drinks": "Getränke",
       "snacks": "Snacks",
-      "specials": "Angebote"
+      "specials": "Specials"
     },
     "drinks": {
       "cocktails": "Cocktails",
@@ -38,12 +40,118 @@
       "wine": "Wein",
       "whiskey": "Whisky",
       "nonAlcoholic": "Alkoholfrei"
+    },
+    "sections": {
+      "onTap": {
+        "title": "BIER",
+        "imageAlt": "Craft-Biere - Vom Fass",
+        "imageTitle": "Craft-Biere",
+        "imageSubtitle": "Premium-Auswahl",
+        "items": [
+          {
+            "name": "DOGFISH HEAD 60 MINUTE IPA",
+            "location": "Milton, Delaware",
+            "price": "$6"
+          },
+          {
+            "name": "EAST END FAT GARY NUT BROWN ALE",
+            "location": "Pittsburgh, Pennsylvania",
+            "price": "$6.5"
+          },
+          {
+            "name": "GREAT WHITE ALE",
+            "location": "Craft-Bier",
+            "price": "$5.5"
+          },
+          {
+            "name": "ROGUE ALES SHAKESPEARE OATMEAL STOUT",
+            "location": "Oregon, USA",
+            "price": "$7"
+          },
+          {
+            "name": "FAT TIRE AMBER ALE",
+            "location": "Colorado, USA",
+            "price": "$6"
+          },
+          {
+            "name": "GUINNESS STOUT",
+            "location": "Irland",
+            "price": "$6.5"
+          }
+        ]
+      },
+      "cocktails": {
+        "title": "COCKTAILS",
+        "imageAlt": "Craft-Cocktails",
+        "imageTitle": "Craft-Cocktails",
+        "imageSubtitle": "Handgemachte Perfektion",
+        "items": [
+          {
+            "name": "MAD DOG",
+            "description": "Tequila, Bananenlikör, weißer Kakao-Likör und frischer Limettensaft",
+            "price": "$8"
+          },
+          {
+            "name": "GODFATHER",
+            "description": "Scotch Single Malt und Amaretto",
+            "price": "$9"
+          },
+          {
+            "name": "PISCO SOUR",
+            "description": "Pisco, Limettensaft, Eiweiß, einfacher Sirup",
+            "price": "$10"
+          },
+          {
+            "name": "LA VIE EN ROSE",
+            "description": "Gin, Rosenlikör, Holunder, Prosecco",
+            "price": "$11"
+          },
+          {
+            "name": "MELON BOWL",
+            "description": "Wodka, Melonenlikör, frischer Wassermelonensaft",
+            "price": "$9"
+          },
+          {
+            "name": "ULTIMATE MARGARITA",
+            "description": "Premium-Tequila, frische Limette, Triple Sec",
+            "price": "$12"
+          }
+        ]
+      },
+      "food": {
+        "title": "ESSEN",
+        "imageAlt": "Bar-Snacks und Essen",
+        "imageTitle": "Bar-Snacks",
+        "imageSubtitle": "Köstliche Bissen",
+        "items": [
+          {
+            "name": "TRÜFFEL-POMMES",
+            "description": "Knusprige Pommes mit Trüffelöl und Parmesan",
+            "price": "$8"
+          },
+          {
+            "name": "RINDER-SLIDER",
+            "description": "Mini-Burger mit Pommes",
+            "price": "$14"
+          },
+          {
+            "name": "BUFFALO-WINGS",
+            "description": "Scharfe Hühnerflügel mit Blauschimmelkäse",
+            "price": "$12"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "title": "Besuchen Sie uns heute",
+      "description": "Erleben Sie die perfekte Kombination aus Premium-Billard und außergewöhnlichem Service",
+      "features": ["Premium-Tische", "Craft-Cocktails", "Turniere"]
     }
   },
   "specials": {
     "happyHour": {
       "title": "Happy Hour",
-      "description": "50% Rabatt auf alle Getränke (16-19 Uhr täglich)",
+      "description": "50% Rabatt auf alle Getränke (täglich 16-19 Uhr)",
       "discount": "50% RABATT"
     }
   },
@@ -66,23 +174,23 @@
       },
       "manhattan": {
         "name": "Manhattan",
-        "description": "Whiskey, sweet vermouth, bitters",
+        "description": "Whisky, süßer Wermut, Bitters",
         "price": "$15"
       },
       "negroni": {
         "name": "Negroni",
-        "description": "Gin, Campari, sweet vermouth",
+        "description": "Gin, Campari, süßer Wermut",
         "price": "$14"
       },
       "martini": {
-        "name": "Classic Martini",
-        "description": "Gin, dry vermouth, olive or twist",
+        "name": "Klassischer Martini",
+        "description": "Gin, trockener Wermut, Olive oder Zeste",
         "price": "$16"
       }
     },
     "beer": {
       "craftLager": {
-        "name": "Craft Lager",
+        "name": "Craft-Lager",
         "description": "Lokales Craft-Bier",
         "price": "$8"
       },
@@ -92,30 +200,30 @@
         "price": "$9"
       },
       "stout": {
-        "name": "Dark Stout",
-        "description": "Rich, creamy stout",
+        "name": "Dunkler Stout",
+        "description": "Reicher, cremiger Stout",
         "price": "$10"
       },
       "wheat": {
-        "name": "Wheat Beer",
-        "description": "Light, refreshing wheat beer",
+        "name": "Weizenbier",
+        "description": "Leichtes, erfrischendes Weizenbier",
         "price": "$8"
       }
     },
     "wine": {
       "red": {
-        "name": "House Red",
+        "name": "Haus-Rotwein",
         "description": "Cabernet Sauvignon",
         "price": "$12"
       },
       "white": {
-        "name": "House White",
+        "name": "Haus-Weißwein",
         "description": "Chardonnay",
         "price": "$11"
       },
       "rose": {
         "name": "Rosé",
-        "description": "Light, crisp rosé",
+        "description": "Leichter, frischer Rosé",
         "price": "$10"
       }
     },
@@ -126,23 +234,23 @@
         "price": "$10"
       },
       "wings": {
-        "name": "Buffalo Wings",
+        "name": "Buffalo-Wings",
         "description": "Scharfe Hühnerflügel",
         "price": "$12"
       },
       "sliders": {
-        "name": "Beef Sliders",
-        "description": "Mini burgers with fries",
+        "name": "Rinder-Slider",
+        "description": "Mini-Burger mit Pommes",
         "price": "$14"
       },
       "fries": {
-        "name": "Truffle Fries",
-        "description": "Crispy fries with truffle oil",
+        "name": "Trüffel-Pommes",
+        "description": "Knusprige Pommes mit Trüffelöl",
         "price": "$8"
       },
       "pretzel": {
-        "name": "Soft Pretzel",
-        "description": "Warm pretzel with mustard",
+        "name": "Weicher Brezel",
+        "description": "Warmer Brezel mit Senf",
         "price": "$6"
       }
     }

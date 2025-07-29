@@ -5,9 +5,9 @@
     "about": "关于我们"
   },
   "homepage": {
-    "title": "巴伦先生台球酒吧",
+    "title": "Mr. Baron Billiards Bar",
     "subtitle": "冠军的竞技场",
-    "welcome": "欢迎来到镇上最好的台球体验",
+    "welcome": "欢迎来到城里最好的台球体验",
     "description": "享受优质饮品、美味小吃和最佳台球氛围。适合休闲游戏或竞技比赛。",
     "viewMenu": "查看菜单"
   },
@@ -21,16 +21,18 @@
       "description": "专家调制的饮品和优质烈酒"
     },
     "tournaments": {
-      "title": "锦标赛",
-      "description": "定期锦标赛和竞技比赛"
+      "title": "比赛",
+      "description": "定期比赛和竞技游戏"
     }
   },
   "menu": {
     "title": "我们的菜单",
+    "brandTitle": "Mr.Baron 菜单",
+    "brandSubtitle": "鸡尾酒 + 啤酒 + 美食",
     "categories": {
       "drinks": "饮品",
       "snacks": "小吃",
-      "specials": "特价"
+      "specials": "特色"
     },
     "drinks": {
       "cocktails": "鸡尾酒",
@@ -38,12 +40,118 @@
       "wine": "葡萄酒",
       "whiskey": "威士忌",
       "nonAlcoholic": "无酒精"
+    },
+    "sections": {
+      "onTap": {
+        "title": "啤酒",
+        "imageAlt": "精酿啤酒 - 生啤",
+        "imageTitle": "精酿啤酒",
+        "imageSubtitle": "优质选择",
+        "items": [
+          {
+            "name": "DOGFISH HEAD 60 MINUTE IPA",
+            "location": "米尔顿，特拉华州",
+            "price": "$6"
+          },
+          {
+            "name": "EAST END FAT GARY NUT BROWN ALE",
+            "location": "匹兹堡，宾夕法尼亚州",
+            "price": "$6.5"
+          },
+          {
+            "name": "GREAT WHITE ALE",
+            "location": "精酿啤酒",
+            "price": "$5.5"
+          },
+          {
+            "name": "ROGUE ALES SHAKESPEARE OATMEAL STOUT",
+            "location": "俄勒冈州，美国",
+            "price": "$7"
+          },
+          {
+            "name": "FAT TIRE AMBER ALE",
+            "location": "科罗拉多州，美国",
+            "price": "$6"
+          },
+          {
+            "name": "GUINNESS STOUT",
+            "location": "爱尔兰",
+            "price": "$6.5"
+          }
+        ]
+      },
+      "cocktails": {
+        "title": "鸡尾酒",
+        "imageAlt": "手工鸡尾酒",
+        "imageTitle": "手工鸡尾酒",
+        "imageSubtitle": "手工完美",
+        "items": [
+          {
+            "name": "MAD DOG",
+            "description": "龙舌兰酒、香蕉利口酒、白可可利口酒和新鲜青柠汁",
+            "price": "$8"
+          },
+          {
+            "name": "GODFATHER",
+            "description": "苏格兰单一麦芽威士忌和阿玛雷托",
+            "price": "$9"
+          },
+          {
+            "name": "PISCO SOUR",
+            "description": "皮斯科酒、青柠汁、蛋白、简单糖浆",
+            "price": "$10"
+          },
+          {
+            "name": "LA VIE EN ROSE",
+            "description": "金酒、玫瑰利口酒、接骨木花、普罗塞克",
+            "price": "$11"
+          },
+          {
+            "name": "MELON BOWL",
+            "description": "伏特加、甜瓜利口酒、新鲜西瓜汁",
+            "price": "$9"
+          },
+          {
+            "name": "ULTIMATE MARGARITA",
+            "description": "优质龙舌兰酒、新鲜青柠、橙皮利口酒",
+            "price": "$12"
+          }
+        ]
+      },
+      "food": {
+        "title": "美食",
+        "imageAlt": "酒吧小吃和美食",
+        "imageTitle": "酒吧小吃",
+        "imageSubtitle": "美味小食",
+        "items": [
+          {
+            "name": "松露薯条",
+            "description": "酥脆薯条配松露油和帕尔马干酪",
+            "price": "$8"
+          },
+          {
+            "name": "牛肉小汉堡",
+            "description": "迷你汉堡配薯条",
+            "price": "$14"
+          },
+          {
+            "name": "水牛城鸡翅",
+            "description": "辣鸡翅配蓝纹奶酪",
+            "price": "$12"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "title": "今天就来拜访我们",
+      "description": "体验优质台球和卓越服务的完美结合",
+      "features": ["优质球台", "手工鸡尾酒", "比赛"]
     }
   },
   "specials": {
     "happyHour": {
       "title": "欢乐时光",
-      "description": "所有饮品5折优惠（每日16:00-19:00）",
+      "description": "所有饮品5折优惠（每日16-19点）",
       "discount": "5折优惠"
     }
   },
@@ -61,28 +169,28 @@
       },
       "margarita": {
         "name": "玛格丽塔",
-        "description": "龙舌兰酒、橙味利口酒、青柠汁",
+        "description": "龙舌兰酒、橙皮利口酒、青柠汁",
         "price": "$13"
       },
       "manhattan": {
-        "name": "Manhattan",
-        "description": "Whiskey, sweet vermouth, bitters",
+        "name": "曼哈顿",
+        "description": "威士忌、甜味美思、苦精",
         "price": "$15"
       },
       "negroni": {
-        "name": "Negroni",
-        "description": "Gin, Campari, sweet vermouth",
+        "name": "内格罗尼",
+        "description": "金酒、金巴利、甜味美思",
         "price": "$14"
       },
       "martini": {
-        "name": "Classic Martini",
-        "description": "Gin, dry vermouth, olive or twist",
+        "name": "经典马提尼",
+        "description": "金酒、干味美思、橄榄或柠檬皮",
         "price": "$16"
       }
     },
     "beer": {
       "craftLager": {
-        "name": "手工拉格",
+        "name": "精酿拉格",
         "description": "本地精酿啤酒",
         "price": "$8"
       },
@@ -92,57 +200,57 @@
         "price": "$9"
       },
       "stout": {
-        "name": "Dark Stout",
-        "description": "Rich, creamy stout",
+        "name": "黑啤",
+        "description": "浓郁奶油黑啤",
         "price": "$10"
       },
       "wheat": {
-        "name": "Wheat Beer",
-        "description": "Light, refreshing wheat beer",
+        "name": "小麦啤酒",
+        "description": "清爽小麦啤酒",
         "price": "$8"
       }
     },
     "wine": {
       "red": {
-        "name": "House Red",
-        "description": "Cabernet Sauvignon",
+        "name": "招牌红葡萄酒",
+        "description": "赤霞珠",
         "price": "$12"
       },
       "white": {
-        "name": "House White",
-        "description": "Chardonnay",
+        "name": "招牌白葡萄酒",
+        "description": "霞多丽",
         "price": "$11"
       },
       "rose": {
-        "name": "Rosé",
-        "description": "Light, crisp rosé",
+        "name": "桃红葡萄酒",
+        "description": "清爽桃红葡萄酒",
         "price": "$10"
       }
     },
     "snacks": {
       "nachos": {
-        "name": "玉米片",
+        "name": "墨西哥玉米片",
         "description": "玉米片配奶酪和莎莎酱",
         "price": "$10"
       },
       "wings": {
         "name": "水牛城鸡翅",
-        "description": "辣味鸡翅",
+        "description": "辣鸡翅",
         "price": "$12"
       },
       "sliders": {
-        "name": "Beef Sliders",
-        "description": "Mini burgers with fries",
+        "name": "牛肉小汉堡",
+        "description": "迷你汉堡配薯条",
         "price": "$14"
       },
       "fries": {
-        "name": "Truffle Fries",
-        "description": "Crispy fries with truffle oil",
+        "name": "松露薯条",
+        "description": "酥脆薯条配松露油",
         "price": "$8"
       },
       "pretzel": {
-        "name": "Soft Pretzel",
-        "description": "Warm pretzel with mustard",
+        "name": "软椒盐卷饼",
+        "description": "热椒盐卷饼配芥末",
         "price": "$6"
       }
     }

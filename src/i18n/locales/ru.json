@@ -5,7 +5,7 @@
     "about": "О нас"
   },
   "homepage": {
-    "title": "Бильярдный бар Мистера Барона",
+    "title": "Mr. Baron Billiards Bar",
     "subtitle": "Где играют чемпионы",
     "welcome": "Добро пожаловать в лучший бильярдный опыт в городе",
     "description": "Насладитесь премиальными напитками, вкусными закусками и лучшей бильярдной атмосферой. Идеально для casual игр или соревновательных турниров.",
@@ -17,7 +17,7 @@
       "description": "Профессиональные бильярдные столы для лучшего игрового опыта"
     },
     "craftCocktails": {
-      "title": "Крафтовые коктейли",
+      "title": "Крафт коктейли",
       "description": "Экспертно смешанные напитки и премиальные спиртные напитки"
     },
     "tournaments": {
@@ -27,6 +27,8 @@
   },
   "menu": {
     "title": "Наше меню",
+    "brandTitle": "Меню Mr.Baron",
+    "brandSubtitle": "КОКТЕЙЛИ + ПИВО + ЕДА",
     "categories": {
       "drinks": "Напитки",
       "snacks": "Закуски",
@@ -38,12 +40,118 @@
       "wine": "Вино",
       "whiskey": "Виски",
       "nonAlcoholic": "Безалкогольные"
+    },
+    "sections": {
+      "onTap": {
+        "title": "ПИВО",
+        "imageAlt": "Крафт пиво - На разливе",
+        "imageTitle": "Крафт пиво",
+        "imageSubtitle": "Премиум выбор",
+        "items": [
+          {
+            "name": "DOGFISH HEAD 60 MINUTE IPA",
+            "location": "Милтон, Делавэр",
+            "price": "$6"
+          },
+          {
+            "name": "EAST END FAT GARY NUT BROWN ALE",
+            "location": "Питтсбург, Пенсильвания",
+            "price": "$6.5"
+          },
+          {
+            "name": "GREAT WHITE ALE",
+            "location": "Крафт пиво",
+            "price": "$5.5"
+          },
+          {
+            "name": "ROGUE ALES SHAKESPEARE OATMEAL STOUT",
+            "location": "Орегон, США",
+            "price": "$7"
+          },
+          {
+            "name": "FAT TIRE AMBER ALE",
+            "location": "Колорадо, США",
+            "price": "$6"
+          },
+          {
+            "name": "GUINNESS STOUT",
+            "location": "Ирландия",
+            "price": "$6.5"
+          }
+        ]
+      },
+      "cocktails": {
+        "title": "КОКТЕЙЛИ",
+        "imageAlt": "Крафт коктейли",
+        "imageTitle": "Крафт коктейли",
+        "imageSubtitle": "Ручная работа",
+        "items": [
+          {
+            "name": "MAD DOG",
+            "description": "Текила, крем де банан, белый крем де какао и свежий сок лайма",
+            "price": "$8"
+          },
+          {
+            "name": "GODFATHER",
+            "description": "Шотландский single malt и амаретто",
+            "price": "$9"
+          },
+          {
+            "name": "PISCO SOUR",
+            "description": "Писко, сок лайма, яичный белок, простой сироп",
+            "price": "$10"
+          },
+          {
+            "name": "LA VIE EN ROSE",
+            "description": "Джин, розовый ликер, бузина, просекко",
+            "price": "$11"
+          },
+          {
+            "name": "MELON BOWL",
+            "description": "Водка, дынный ликер, свежий сок арбуза",
+            "price": "$9"
+          },
+          {
+            "name": "ULTIMATE MARGARITA",
+            "description": "Премиум текила, свежий лайм, трипл сек",
+            "price": "$12"
+          }
+        ]
+      },
+      "food": {
+        "title": "ЕДА",
+        "imageAlt": "Барные закуски и еда",
+        "imageTitle": "Барные закуски",
+        "imageSubtitle": "Вкусные укусы",
+        "items": [
+          {
+            "name": "ТРЮФЕЛЬНЫЕ КАРТОШКИ",
+            "description": "Хрустящие картошки с трюфельным маслом и пармезаном",
+            "price": "$8"
+          },
+          {
+            "name": "БИФ СЛАЙДЕРЫ",
+            "description": "Мини бургеры с картошкой",
+            "price": "$14"
+          },
+          {
+            "name": "БУФФАЛО КРЫЛЬЯ",
+            "description": "Острые куриные крылья с голубым сыром",
+            "price": "$12"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "title": "Посетите нас сегодня",
+      "description": "Испытайте идеальное сочетание премиального бильярда и исключительного сервиса",
+      "features": ["Премиум столы", "Крафт коктейли", "Турниры"]
     }
   },
   "specials": {
     "happyHour": {
-      "title": "Счастливые часы",
-      "description": "50% скидка на все напитки (16:00-19:00 ежедневно)",
+      "title": "Счастливый час",
+      "description": "50% скидка на все напитки (ежедневно 16:00-19:00)",
       "discount": "50% СКИДКА"
     }
   },
@@ -65,84 +173,84 @@
         "price": "$13"
       },
       "manhattan": {
-        "name": "Manhattan",
-        "description": "Whiskey, sweet vermouth, bitters",
+        "name": "Манхэттен",
+        "description": "Виски, сладкий вермут, биттеры",
         "price": "$15"
       },
       "negroni": {
-        "name": "Negroni",
-        "description": "Gin, Campari, sweet vermouth",
+        "name": "Негрони",
+        "description": "Джин, кампари, сладкий вермут",
         "price": "$14"
       },
       "martini": {
-        "name": "Classic Martini",
-        "description": "Gin, dry vermouth, olive or twist",
+        "name": "Классический мартини",
+        "description": "Джин, сухой вермут, оливка или цедра",
         "price": "$16"
       }
     },
     "beer": {
       "craftLager": {
-        "name": "Крафтовое лагер",
-        "description": "Местное крафтовое пиво",
+        "name": "Крафт лагер",
+        "description": "Местное крафт пиво",
         "price": "$8"
       },
       "ipa": {
         "name": "IPA",
-        "description": "Хмельное крафтовое пиво",
+        "description": "Хмельное крафт пиво",
         "price": "$9"
       },
       "stout": {
-        "name": "Dark Stout",
-        "description": "Rich, creamy stout",
+        "name": "Темный стаут",
+        "description": "Богатый, кремовый стаут",
         "price": "$10"
       },
       "wheat": {
-        "name": "Wheat Beer",
-        "description": "Light, refreshing wheat beer",
+        "name": "Пшеничное пиво",
+        "description": "Легкое, освежающее пшеничное пиво",
         "price": "$8"
       }
     },
     "wine": {
       "red": {
-        "name": "House Red",
-        "description": "Cabernet Sauvignon",
+        "name": "Домашнее красное",
+        "description": "Каберне совиньон",
         "price": "$12"
       },
       "white": {
-        "name": "House White",
-        "description": "Chardonnay",
+        "name": "Домашнее белое",
+        "description": "Шардоне",
         "price": "$11"
       },
       "rose": {
-        "name": "Rosé",
-        "description": "Light, crisp rosé",
+        "name": "Розовое",
+        "description": "Легкое, свежее розовое",
         "price": "$10"
       }
     },
     "snacks": {
       "nachos": {
         "name": "Начос",
-        "description": "Тортилья с сыром и сальсой",
+        "description": "Тортилья чипсы с сыром и сальсой",
         "price": "$10"
       },
       "wings": {
-        "name": "Крылышки Баффало",
-        "description": "Острые куриные крылышки",
+        "name": "Буффало крылья",
+        "description": "Острые куриные крылья",
         "price": "$12"
       },
       "sliders": {
-        "name": "Beef Sliders",
-        "description": "Mini burgers with fries",
+        "name": "Биф слайдеры",
+        "description": "Мини бургеры с картошкой",
         "price": "$14"
       },
       "fries": {
-        "name": "Truffle Fries",
-        "description": "Crispy fries with truffle oil",
+        "name": "Трюфельные картошки",
+        "description": "Хрустящие картошки с трюфельным маслом",
         "price": "$8"
       },
       "pretzel": {
-        "name": "Soft Pretzel",
-        "description": "Warm pretzel with mustard",
+        "name": "Мягкий крендель",
+        "description": "Теплый крендель с горчицей",
         "price": "$6"
       }
     }

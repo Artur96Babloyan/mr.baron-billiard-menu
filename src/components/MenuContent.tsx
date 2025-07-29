@@ -7,6 +7,91 @@ import Image from 'next/image';
 export default function MenuContent() {
   const t = useTranslations();
 
+  // Define menu items directly to avoid translation issues
+  const onTapItems = [
+    {
+      name: "DOGFISH HEAD 60 MINUTE IPA",
+      location: "Milton, DE",
+      price: "$6"
+    },
+    {
+      name: "EAST END FAT GARY NUT BROWN ALE",
+      location: "Pittsburgh, PA",
+      price: "$6.5"
+    },
+    {
+      name: "GREAT WHITE ALE",
+      location: "Craft Beer",
+      price: "$5.5"
+    },
+    {
+      name: "ROGUE ALES SHAKESPEARE OATMEAL STOUT",
+      location: "Oregon, USA",
+      price: "$7"
+    },
+    {
+      name: "FAT TIRE AMBER ALE",
+      location: "Colorado, USA",
+      price: "$6"
+    },
+    {
+      name: "GUINNESS STOUT",
+      location: "Ireland",
+      price: "$6.5"
+    }
+  ];
+
+  const cocktailsItems = [
+    {
+      name: "MAD DOG",
+      description: "Tequila, crème de banana, white crème de cacao and fresh lime juice",
+      price: "$8"
+    },
+    {
+      name: "GODFATHER",
+      description: "Scotch single malt and amaretto",
+      price: "$9"
+    },
+    {
+      name: "PISCO SOUR",
+      description: "Pisco, lime juice, egg white, simple syrup",
+      price: "$10"
+    },
+    {
+      name: "LA VIE EN ROSE",
+      description: "Gin, rose liqueur, elderflower, prosecco",
+      price: "$11"
+    },
+    {
+      name: "MELON BOWL",
+      description: "Vodka, melon liqueur, fresh watermelon juice",
+      price: "$9"
+    },
+    {
+      name: "ULTIMATE MARGARITA",
+      description: "Premium tequila, fresh lime, triple sec",
+      price: "$12"
+    }
+  ];
+
+  const foodItems = [
+    {
+      name: "TRUFFLE FRIES",
+      description: "Crispy fries with truffle oil and parmesan",
+      price: "$8"
+    },
+    {
+      name: "BEEF SLIDERS",
+      description: "Mini burgers with fries",
+      price: "$14"
+    },
+    {
+      name: "BUFFALO WINGS",
+      description: "Spicy wings with blue cheese",
+      price: "$12"
+    }
+  ];
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20 relative z-10">
       {/* Enhanced Brand Header */}
@@ -18,10 +103,10 @@ export default function MenuContent() {
           {/* Main Content */}
           <div className="relative bg-gradient-to-br from-amber-500/10 to-amber-600/10 border border-amber-500/20 rounded-2xl p-6 sm:p-8 backdrop-blur-sm">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-amber-500 mb-3 tracking-tight drop-shadow-lg">
-              Mr.Baron Menu
+              {t('menu.brandTitle')}
             </h1>
             <p className="text-lg sm:text-xl text-amber-200/90 font-light">
-              COCKTAILS + BEER + FOOD
+              {t('menu.brandSubtitle')}
             </p>
           </div>
         </div>
@@ -36,53 +121,20 @@ export default function MenuContent() {
           <div className="space-y-6">
             <div className="relative">
               <h2 className="text-2xl sm:text-3xl font-bold text-amber-500 border-b-2 border-amber-500/40 pb-3 relative">
-                ON TAP
+                {t('menu.sections.onTap.title')}
                 <div className="absolute bottom-0 left-0 w-16 h-0.5 bg-gradient-to-r from-amber-400 to-transparent"></div>
               </h2>
             </div>
             <div className="space-y-4 bg-gradient-to-br from-green-800/20 to-green-900/20 rounded-xl p-6 border border-green-700/30">
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div>
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">DOGFISH HEAD 60 MINUTE IPA</h3>
-                  <p className="text-sm text-amber-200/70">Milton, DE</p>
+              {onTapItems.map((item, index) => (
+                <div key={index} className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
+                  <div>
+                    <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">{item.name}</h3>
+                    <p className="text-sm text-amber-200/70">{item.location}</p>
+                  </div>
+                  <span className="text-lg font-bold text-amber-400">{item.price}</span>
                 </div>
-                <span className="text-lg font-bold text-amber-400">$6</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div>
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">EAST END FAT GARY NUT BROWN ALE</h3>
-                  <p className="text-sm text-amber-200/70">Pittsburgh, PA</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400">$6.5</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div>
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">GREAT WHITE ALE</h3>
-                  <p className="text-sm text-amber-200/70">Craft Beer</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400">$5.5</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div>
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">ROGUE ALES SHAKESPEARE OATMEAL STOUT</h3>
-                  <p className="text-sm text-amber-200/70">Oregon, USA</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400">$7</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div>
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">FAT TIRE AMBER ALE</h3>
-                  <p className="text-sm text-amber-200/70">Colorado, USA</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400">$6</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div>
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">GUINNESS STOUT</h3>
-                  <p className="text-sm text-amber-200/70">Ireland</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400">$6.5</span>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -91,14 +143,14 @@ export default function MenuContent() {
             <div className="relative h-80 sm:h-96 w-full max-w-md rounded-2xl overflow-hidden group shadow-2xl">
               <Image
                 src="/beer.png"
-                alt="Craft Beers - On Tap"
+                alt={t('menu.sections.onTap.imageAlt')}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/5 to-transparent group-hover:from-black/10 transition-all duration-300"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                <h3 className="text-white font-bold text-2xl drop-shadow-lg">Craft Beers</h3>
-                <p className="text-amber-200 text-lg">Premium selection</p>
+                <h3 className="text-white font-bold text-2xl drop-shadow-lg">{t('menu.sections.onTap.imageTitle')}</h3>
+                <p className="text-amber-200 text-lg">{t('menu.sections.onTap.imageSubtitle')}</p>
               </div>
             </div>
           </div>
@@ -110,53 +162,20 @@ export default function MenuContent() {
           <div className="space-y-6">
             <div className="relative">
               <h2 className="text-2xl sm:text-3xl font-bold text-amber-500 border-b-2 border-amber-500/40 pb-3 relative">
-                COCKTAILS
+                {t('menu.sections.cocktails.title')}
                 <div className="absolute bottom-0 left-0 w-16 h-0.5 bg-gradient-to-r from-amber-400 to-transparent"></div>
               </h2>
             </div>
             <div className="space-y-4 bg-gradient-to-br from-green-800/20 to-green-900/20 rounded-xl p-6 border border-green-700/30">
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">MAD DOG</h3>
-                  <p className="text-sm text-amber-200/70">Tequila, crème de banana, white crème de cacao and fresh lime juice</p>
+              {cocktailsItems.map((item, index) => (
+                <div key={index} className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">{item.name}</h3>
+                    <p className="text-sm text-amber-200/70">{item.description}</p>
+                  </div>
+                  <span className="text-lg font-bold text-amber-400 ml-4">{item.price}</span>
                 </div>
-                <span className="text-lg font-bold text-amber-400 ml-4">$8</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">GODFATHER</h3>
-                  <p className="text-sm text-amber-200/70">Scotch single malt and amaretto</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400 ml-4">$9</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">PISCO SOUR</h3>
-                  <p className="text-sm text-amber-200/70">Pisco, lime juice, egg white, simple syrup</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400 ml-4">$10</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">LA VIE EN ROSE</h3>
-                  <p className="text-sm text-amber-200/70">Gin, rose liqueur, elderflower, prosecco</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400 ml-4">$11</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">MELON BOWL</h3>
-                  <p className="text-sm text-amber-200/70">Vodka, melon liqueur, fresh watermelon juice</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400 ml-4">$9</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">ULTIMATE MARGARITA</h3>
-                  <p className="text-sm text-amber-200/70">Premium tequila, fresh lime, triple sec</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400 ml-4">$12</span>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -165,14 +184,14 @@ export default function MenuContent() {
             <div className="relative h-80 sm:h-96 w-full max-w-md rounded-2xl overflow-hidden group shadow-2xl">
               <Image
                 src="/cocktails.png"
-                alt="Craft Cocktails"
+                alt={t('menu.sections.cocktails.imageAlt')}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/5 to-transparent group-hover:from-black/10 transition-all duration-300"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                <h3 className="text-white font-bold text-2xl drop-shadow-lg">Craft Cocktails</h3>
-                <p className="text-amber-200 text-lg">Handcrafted perfection</p>
+                <h3 className="text-white font-bold text-2xl drop-shadow-lg">{t('menu.sections.cocktails.imageTitle')}</h3>
+                <p className="text-amber-200 text-lg">{t('menu.sections.cocktails.imageSubtitle')}</p>
               </div>
             </div>
           </div>
@@ -184,32 +203,20 @@ export default function MenuContent() {
           <div className="space-y-6">
             <div className="relative">
               <h2 className="text-2xl sm:text-3xl font-bold text-amber-500 border-b-2 border-amber-500/40 pb-3 relative">
-                FOOD
+                {t('menu.sections.food.title')}
                 <div className="absolute bottom-0 left-0 w-16 h-0.5 bg-gradient-to-r from-amber-400 to-transparent"></div>
               </h2>
             </div>
             <div className="space-y-4 bg-gradient-to-br from-green-800/20 to-green-900/20 rounded-xl p-6 border border-green-700/30">
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div>
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">TRUFFLE FRIES</h3>
-                  <p className="text-sm text-amber-200/70">Crispy fries with truffle oil and parmesan</p>
+              {foodItems.map((item, index) => (
+                <div key={index} className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
+                  <div>
+                    <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">{item.name}</h3>
+                    <p className="text-sm text-amber-200/70">{item.description}</p>
+                  </div>
+                  <span className="text-lg font-bold text-amber-400">{item.price}</span>
                 </div>
-                <span className="text-lg font-bold text-amber-400">$8</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div>
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">BEEF SLIDERS</h3>
-                  <p className="text-sm text-amber-200/70">Mini burgers with fries</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400">$14</span>
-              </div>
-              <div className="flex justify-between items-start group hover:bg-amber-500/5 rounded-lg p-2 transition-all duration-300">
-                <div>
-                  <h3 className="text-lg font-semibold text-amber-100 group-hover:text-amber-200 transition-colors">BUFFALO WINGS</h3>
-                  <p className="text-sm text-amber-200/70">Spicy wings with blue cheese</p>
-                </div>
-                <span className="text-lg font-bold text-amber-400">$12</span>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -218,14 +225,14 @@ export default function MenuContent() {
             <div className="relative h-80 sm:h-96 w-full max-w-md rounded-2xl overflow-hidden group shadow-2xl">
               <Image
                 src="/food.png"
-                alt="Bar Snacks & Food"
+                alt={t('menu.sections.food.imageAlt')}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/5 to-transparent group-hover:from-black/10 transition-all duration-300"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                <h3 className="text-white font-bold text-2xl drop-shadow-lg">Bar Snacks</h3>
-                <p className="text-amber-200 text-lg">Delicious bites</p>
+                <h3 className="text-white font-bold text-2xl drop-shadow-lg">{t('menu.sections.food.imageTitle')}</h3>
+                <p className="text-amber-200 text-lg">{t('menu.sections.food.imageSubtitle')}</p>
               </div>
             </div>
           </div>
@@ -241,23 +248,23 @@ export default function MenuContent() {
           {/* Main Footer Container */}
           <div className="relative bg-gradient-to-br from-amber-500/15 via-amber-600/10 to-amber-500/15 border border-amber-500/30 rounded-3xl p-8 sm:p-12 backdrop-blur-sm">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-amber-100 mb-6 drop-shadow-lg">
-              Visit Us Today
+              {t('menu.footer.title')}
             </h3>
             <p className="text-lg sm:text-xl lg:text-2xl text-amber-200/90 mb-8 sm:mb-10 max-w-4xl mx-auto font-light leading-relaxed">
-              Experience the perfect blend of premium billiards and exceptional service
+              {t('menu.footer.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
               <div className="flex items-center justify-center space-x-3 text-amber-200 text-sm sm:text-base group">
                 <span className="w-3 h-3 bg-amber-400 rounded-full group-hover:scale-125 transition-transform duration-300"></span>
-                <span className="group-hover:text-amber-100 transition-colors">Premium Tables</span>
+                <span className="group-hover:text-amber-100 transition-colors">{t('menu.footer.features.0')}</span>
               </div>
               <div className="flex items-center justify-center space-x-3 text-amber-200 text-sm sm:text-base group">
                 <span className="w-3 h-3 bg-amber-400 rounded-full group-hover:scale-125 transition-transform duration-300"></span>
-                <span className="group-hover:text-amber-100 transition-colors">Craft Cocktails</span>
+                <span className="group-hover:text-amber-100 transition-colors">{t('menu.footer.features.1')}</span>
               </div>
               <div className="flex items-center justify-center space-x-3 text-amber-200 text-sm sm:text-base group">
                 <span className="w-3 h-3 bg-amber-400 rounded-full group-hover:scale-125 transition-transform duration-300"></span>
-                <span className="group-hover:text-amber-100 transition-colors">Tournaments</span>
+                <span className="group-hover:text-amber-100 transition-colors">{t('menu.footer.features.2')}</span>
               </div>
             </div>
           </div>

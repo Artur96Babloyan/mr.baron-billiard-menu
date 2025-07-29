@@ -5,20 +5,20 @@
     "about": "Մեր մասին"
   },
   "homepage": {
-    "title": "Միստր Բարոնի Բիլիարդի Բար",
-    "subtitle": "Որտեղ Խաղում են Չեմպիոնները",
-    "welcome": "Բարի գալուստ քաղաքի լավագույն բիլիարդի փորձառություն",
-    "description": "Վայելեք պրեմիում ըմպելիքներ, համեղ նախուտեստներ և լավագույն բիլիարդի մթնոլորտ: Կատարյալ է պատահական խաղերի կամ մրցակցային մրցաշարերի համար:",
-    "viewMenu": "Տեսնել Մենյու"
+    "title": "Mr. Baron Billiards Bar",
+    "subtitle": "Որտեղ խաղում են չեմպիոնները",
+    "welcome": "Բարի գալուստ քաղաքի լավագույն բիլիարդային փորձառություն",
+    "description": "Վայելեք պրեմիում ըմպելիքներ, համեղ նախուտեստներ և լավագույն բիլիարդային մթնոլորտ: Կատարյալ է պատահական խաղերի կամ մրցակցային մրցաշարերի համար:",
+    "viewMenu": "Տեսնել մենյու"
   },
   "features": {
     "premiumTables": {
-      "title": "Պրեմիում Սեղաններ",
-      "description": "Մասնագիտական բիլիարդի սեղաններ լավագույն խաղային փորձառության համար"
+      "title": "Պրեմիում սեղաններ",
+      "description": "Պրոֆեսիոնալ բիլիարդային սեղաններ լավագույն խաղային փորձառության համար"
     },
     "craftCocktails": {
-      "title": "Ձեռքի Կոկտեյլներ",
-      "description": "Փորձագետների կողմից խառնված ըմպելիքներ և պրեմիում ալկոհոլ"
+      "title": "Ձեռագործ կոկտեյլներ",
+      "description": "Փորձագիտորեն խառնված ըմպելիքներ և պրեմիում ալկոհոլ"
     },
     "tournaments": {
       "title": "Մրցաշարեր",
@@ -26,7 +26,9 @@
     }
   },
   "menu": {
-    "title": "Մեր Մենյուն",
+    "title": "Մեր մենյուն",
+    "brandTitle": "Mr.Baron մենյու",
+    "brandSubtitle": "ԿՈԿՏԵՅԼՆԵՐ + ԳԻՆԵՐ + ՍՆՈՒՆԴ",
     "categories": {
       "drinks": "Ըմպելիքներ",
       "snacks": "Նախուտեստներ",
@@ -34,115 +36,221 @@
     },
     "drinks": {
       "cocktails": "Կոկտեյլներ",
-      "beer": "Գարեջուր",
+      "beer": "Գինի",
       "wine": "Գինի",
       "whiskey": "Վիսկի",
       "nonAlcoholic": "Ալկոհոլազերծ"
+    },
+    "sections": {
+      "onTap": {
+        "title": "ԳԻՆԵՐ",
+        "imageAlt": "Ձեռագործ գինիներ - Թափարկում",
+        "imageTitle": "Ձեռագործ գինիներ",
+        "imageSubtitle": "Պրեմիում ընտրություն",
+        "items": [
+          {
+            "name": "DOGFISH HEAD 60 MINUTE IPA",
+            "location": "Միլթոն, Դելավեր",
+            "price": "$6"
+          },
+          {
+            "name": "EAST END FAT GARY NUT BROWN ALE",
+            "location": "Փիթսբուրգ, Փենսիլվանիա",
+            "price": "$6.5"
+          },
+          {
+            "name": "GREAT WHITE ALE",
+            "location": "Ձեռագործ գինի",
+            "price": "$5.5"
+          },
+          {
+            "name": "ROGUE ALES SHAKESPEARE OATMEAL STOUT",
+            "location": "Օրեգոն, ԱՄՆ",
+            "price": "$7"
+          },
+          {
+            "name": "FAT TIRE AMBER ALE",
+            "location": "Կոլորադո, ԱՄՆ",
+            "price": "$6"
+          },
+          {
+            "name": "GUINNESS STOUT",
+            "location": "Իռլանդիա",
+            "price": "$6.5"
+          }
+        ]
+      },
+      "cocktails": {
+        "title": "ԿՈԿՏԵՅԼՆԵՐ",
+        "imageAlt": "Ձեռագործ կոկտեյլներ",
+        "imageTitle": "Ձեռագործ կոկտեյլներ",
+        "imageSubtitle": "Ձեռքով պատրաստված կատարելություն",
+        "items": [
+          {
+            "name": "MAD DOG",
+            "description": "Թեքիա, կրեմ դե բանան, սպիտակ կրեմ դե կակաո և թարմ կիտրոնի հյութ",
+            "price": "$8"
+          },
+          {
+            "name": "GODFATHER",
+            "description": "Շոտլանդական single malt և ամարետտո",
+            "price": "$9"
+          },
+          {
+            "name": "PISCO SOUR",
+            "description": "Պիսկո, կիտրոնի հյութ, ձվի սպիտակուց, պարզ սիրոպ",
+            "price": "$10"
+          },
+          {
+            "name": "LA VIE EN ROSE",
+            "description": "Ջին, վարդի լիկյոր, թթվենի, պրոսեկո",
+            "price": "$11"
+          },
+          {
+            "name": "MELON BOWL",
+            "description": "Վոդկա, ձմերուկի լիկյոր, թարմ ձմերուկի հյութ",
+            "price": "$9"
+          },
+          {
+            "name": "ULTIMATE MARGARITA",
+            "description": "Պրեմիում թեքիա, թարմ կիտրոն, տրիպլ սեկ",
+            "price": "$12"
+          }
+        ]
+      },
+      "food": {
+        "title": "ՍՆՈՒՆԴ",
+        "imageAlt": "Բարի նախուտեստներ և սնունդ",
+        "imageTitle": "Բարի նախուտեստներ",
+        "imageSubtitle": "Համեղ կծվածքներ",
+        "items": [
+          {
+            "name": "ԹՐՈՒՖԵԼԱՅԻՆ ԿԱՐՏՈՖԻԼ",
+            "description": "Խրթխրթան կարտոֆիլ թրուֆելի յուղով և պարմեզանով",
+            "price": "$8"
+          },
+          {
+            "name": "ԳՈՐԾԱՐԻ ՍԼԱՅԴԵՐՆԵՐ",
+            "description": "Մինի բուրգերներ կարտոֆիլով",
+            "price": "$14"
+          },
+          {
+            "name": "ԲՈՒՖԱԼՈ ԹԵՎԵՐ",
+            "description": "Կծու հավի թևեր կապույտ պանրով",
+            "price": "$12"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "title": "Այցելեք մեզ այսօր",
+      "description": "Փորձեք պրեմիում բիլիարդի և բացառիկ սպասարկման կատարյալ համադրությունը",
+      "features": ["Պրեմիում սեղաններ", "Ձեռագործ կոկտեյլներ", "Մրցաշարեր"]
     }
   },
   "specials": {
     "happyHour": {
-      "title": "Երջանիկ Ժամ",
-      "description": "50% զեղչ բոլոր ըմպելիքների վրա (16:00-19:00 ամեն օր)",
+      "title": "Երջանիկ ժամ",
+      "description": "50% զեղչ բոլոր ըմպելիքների վրա (օրական 16:00-19:00)",
       "discount": "50% ԶԵՂՉ"
     }
   },
   "items": {
     "cocktails": {
       "moscowMule": {
-        "name": "Մոսկովյան շնիկ",
-        "description": "Վոդկա, կոճապղպեղի գարեջուր, կիտրոնի հյութ",
+        "name": "Մոսկովյան մուլ",
+        "description": "Վոդկա, իմբիրի գինի, կիտրոնի հյութ",
         "price": "$12"
       },
       "oldFashioned": {
-        "name": "Հին Ֆեշն",
+        "name": "Հին ոճ",
         "description": "Բուրբոն, բիտտերներ, շաքարի խորանարդ",
         "price": "$14"
       },
       "margarita": {
         "name": "Մարգարիտա",
-        "description": "Տեկիլա, տրիպլ սեկ, կիտրոնի հյութ",
+        "description": "Թեքիա, տրիպլ սեկ, կիտրոնի հյութ",
         "price": "$13"
       },
       "manhattan": {
-        "name": "Manhattan",
-        "description": "Whiskey, sweet vermouth, bitters",
+        "name": "Մանհեթեն",
+        "description": "Վիսկի, քաղցր վերմուտ, բիտտերներ",
         "price": "$15"
       },
       "negroni": {
-        "name": "Negroni",
-        "description": "Gin, Campari, sweet vermouth",
+        "name": "Նեգրոնի",
+        "description": "Ջին, կամպարի, քաղցր վերմուտ",
         "price": "$14"
       },
       "martini": {
-        "name": "Classic Martini",
-        "description": "Gin, dry vermouth, olive or twist",
+        "name": "Կլասիկ մարտինի",
+        "description": "Ջին, չոր վերմուտ, ձիթապտուղ կամ կեղև",
         "price": "$16"
       }
     },
     "beer": {
       "craftLager": {
-        "name": "Ձեռքի Լագեր",
-        "description": "Տեղական ձեռքի գարեջուր",
+        "name": "Ձեռագործ լագեր",
+        "description": "Տեղական ձեռագործ գինի",
         "price": "$8"
       },
       "ipa": {
         "name": "IPA",
-        "description": "Հոփով ձեռքի գարեջուր",
+        "description": "Հոպով ձեռագործ գինի",
         "price": "$9"
       },
       "stout": {
-        "name": "Dark Stout",
-        "description": "Rich, creamy stout",
+        "name": "Մուգ ստաուտ",
+        "description": "Հարուստ, կրեմային ստաուտ",
         "price": "$10"
       },
       "wheat": {
-        "name": "Wheat Beer",
-        "description": "Light, refreshing wheat beer",
+        "name": "Արդարահատ գինի",
+        "description": "Թեթև, զովարար ցորենի գինի",
         "price": "$8"
       }
     },
     "wine": {
       "red": {
-        "name": "House Red",
-        "description": "Cabernet Sauvignon",
+        "name": "Տան կարմիր",
+        "description": "Կաբերնե սովինյոն",
         "price": "$12"
       },
       "white": {
-        "name": "House White",
-        "description": "Chardonnay",
+        "name": "Տան սպիտակ",
+        "description": "Շարդոնե",
         "price": "$11"
       },
       "rose": {
-        "name": "Rosé",
-        "description": "Light, crisp rosé",
+        "name": "Վարդագույն",
+        "description": "Թեթև, թարմ վարդագույն",
         "price": "$10"
       }
     },
     "snacks": {
       "nachos": {
         "name": "Նաչոս",
-        "description": "Տորտիլա չիպսեր պանրով և սալսայով",
+        "description": "Տորթիլյա չիպսեր պանրով և սալսայով",
         "price": "$10"
       },
       "wings": {
-        "name": "Բուֆալոյի Թևեր",
-        "description": "Թթու հավի թևեր",
+        "name": "Բուֆալո թևեր",
+        "description": "Կծու հավի թևեր",
         "price": "$12"
       },
       "sliders": {
-        "name": "Beef Sliders",
-        "description": "Mini burgers with fries",
+        "name": "Գործարի սլայդերներ",
+        "description": "Մինի բուրգերներ կարտոֆիլով",
         "price": "$14"
       },
       "fries": {
-        "name": "Truffle Fries",
-        "description": "Crispy fries with truffle oil",
+        "name": "Թրուֆելային կարտոֆիլ",
+        "description": "Խրթխրթան կարտոֆիլ թրուֆելի յուղով",
         "price": "$8"
       },
       "pretzel": {
-        "name": "Soft Pretzel",
-        "description": "Warm pretzel with mustard",
+        "name": "Փափուկ կրենզել",
+        "description": "Տաք կրենզել մանանեխով",
         "price": "$6"
       }
     }
