@@ -15,7 +15,7 @@ export default function MenuImageViewer() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-11 relative z-10">
+    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pb-16 pt-11 relative z-10">
       {/* Menu Title */}
       <MenuTitle />
 
@@ -45,13 +45,13 @@ export default function MenuImageViewer() {
         <div className="space-y-[3px]">
           {menuImages.map((image, index) => (
             <div key={index} className="flex justify-center items-center py-[3px]">
-              <div className="relative w-full mx-2 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10 h-[50vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh]">
+              <div className="w-full mx-1 sm:mx-2 md:mx-4 lg:mx-6 xl:mx-18">
                 <Image
                   src={image}
                   alt={`Mr. Baron Menu Page ${index + 1}`}
                   width={800}
                   height={1000}
-                  className="w-full h-full object-contain"
+                  className="w-full h-auto object-contain"
                   priority={index === 0}
                   quality={85}
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
