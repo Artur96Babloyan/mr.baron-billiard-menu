@@ -42,9 +42,9 @@ export default function MenuImageViewer() {
 
       {/* Scrollable Menu Container */}
       <div className="h-[85vh] overflow-y-auto scroll-smooth">
-        <div className="space-y-2">
+        <div className="space-y-[3px]">
           {menuImages.map((image, index) => (
-            <div key={index} className="flex justify-center min-h-[85vh] items-center py-2">
+            <div key={index} className="flex justify-center min-h-[85vh] items-center py-[3px]">
               <div className="relative w-full mx-4 sm:mx-6 md:mx-8 lg:mx-12 xl:mx-16 h-[85vh]">
                 <Image
                   src={image}
@@ -52,6 +52,8 @@ export default function MenuImageViewer() {
                   fill
                   className="object-contain"
                   priority={index === 0}
+                  quality={85}
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
                 />
               </div>
             </div>
