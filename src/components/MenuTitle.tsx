@@ -18,12 +18,6 @@ export default function MenuTitle() {
       <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-white mb-4 tracking-wider">
         {t('menu.brandTitle')}
       </h1>
-
-      {/* Subtitle */}
-      <p className="text-lg sm:text-xl text-white/90 font-light tracking-wide mb-6">
-        {t('menu.brandSubtitle')}
-      </p>
-
       {/* Bottom Decorative Elements */}
       <div className="flex justify-center items-center">
         <div className="w-8 h-px bg-white/60"></div>
