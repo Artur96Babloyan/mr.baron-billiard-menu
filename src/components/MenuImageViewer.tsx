@@ -44,13 +44,14 @@ export default function MenuImageViewer() {
       <div className="h-[85vh] overflow-y-auto scroll-smooth">
         <div className="space-y-[3px]">
           {menuImages.map((image, index) => (
-            <div key={index} className="flex justify-center min-h-[85vh] items-center py-[3px]">
-              <div className="relative w-full mx-4 sm:mx-6 md:mx-8 lg:mx-12 xl:mx-16 h-[85vh]">
+            <div key={index} className="flex justify-center items-center py-[3px]">
+              <div className="relative w-full mx-2 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10 h-[50vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh]">
                 <Image
                   src={image}
                   alt={`Mr. Baron Menu Page ${index + 1}`}
-                  fill
-                  className="object-contain"
+                  width={800}
+                  height={1000}
+                  className="w-full h-full object-contain"
                   priority={index === 0}
                   quality={85}
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
