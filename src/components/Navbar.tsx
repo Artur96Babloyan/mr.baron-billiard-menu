@@ -60,16 +60,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20 sm:h-24">
           {/* Classic Logo */}
           <Link href={`/${currentLocale}`} className="flex items-center space-x-3 sm:space-x-4 group">
-            <div className="relative w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[#D9D1C4] to-[#C4B8A8] rounded-full flex items-center justify-center shadow-lg group-hover:shadow-[#D9D1C4]/40 transition-all duration-300 border-2 border-[#D9D1C4]/50">
-              <Image
-                src="/logo.png"
-                alt="Mr. Baron Logo"
-                width={36}
-                height={36}
-                className="object-contain rounded-full w-10 h-10 sm:w-12 sm:h-12"
-              />
-              <div className="absolute inset-0 bg-[#D9D1C4]/30 rounded-full animate-pulse"></div>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Mr. Baron Logo"
+              width={64}
+              height={64}
+              priority
+              className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover shadow-lg ring-1 ring-[#D9B86A]/50 group-hover:ring-[#D9B86A] transition-all duration-300"
+            />
             <div className="flex flex-col">
               <span className="text-white font-serif font-bold text-xl sm:text-2xl leading-tight tracking-wide drop-shadow-lg">Mr. Baron</span>
               <span className="text-white/90 font-serif text-sm sm:text-base leading-tight tracking-wider drop-shadow-md">Billiards Bar</span>
