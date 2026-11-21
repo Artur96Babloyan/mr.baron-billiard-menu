@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mr. Baron Billiards Bar — Menu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lora:wght@500;600&family=Noto+Serif+Armenian:wght@500&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+  /* Page = same aspect as the table-top photo (736x1309) */
+  @page { size: 560px 996px; margin: 0; }
+  :root {
+    --cream: #EBDDB6;
+    --cream-dim: rgba(235, 221, 182, .78);
+    --gold: #D9B86A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #0d2a17; }
+  .page {
+    position: relative;
+    width: 560px; height: 996px;
+    overflow: hidden;
+    page-break-after: always; break-after: page;
+    color: var(--cream);
+    font-family: 'Lora', Georgia, serif;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .shade { position: absolute; inset: 0; z-index: 1;
+    background: radial-gradient(ellipse at 50% 42%, rgba(0,0,0,.05) 0%, rgba(0,0,0,.30) 75%); }
+
+  /* ---------- Cover ---------- */
+  .cover .shade { background: linear-gradient(to bottom, rgba(0,0,0,.05) 0%, rgba(0,0,0,.15) 40%, rgba(0,0,0,.55) 100%); }
+  .cover .title {
+    position: absolute; z-index: 2; left: 0; right: 0; top: 50%;
+    text-align: center;
+  }
+  .cover .brand { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 76px; letter-spacing: 1px;
+    line-height: 1; text-shadow: 0 4px 18px rgba(0,0,0,.6); }
+  .cover .sub { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 19px; letter-spacing: 9px;
+    margin-top: 12px; padding-left: 9px; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
+  .cover .rule { width: 170px; height: 1px; margin: 34px auto 30px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+  .cover .menu { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 44px; letter-spacing: 22px;
+    padding-left: 22px; color: var(--gold); text-shadow: 0 2px 12px rgba(0,0,0,.6); }
+  .cover .tag { font-family: 'Kaushan Script', cursive; font-size: 24px; margin-top: 26px; color: var(--cream-dim);
+    text-shadow: 0 2px 8px rgba(0,0,0,.7); }
+
+  /* ---------- Content pages ---------- */
+  .content {
+    position: absolute; z-index: 2;
+    left: 76px; right: 76px; top: 70px; bottom: 210px;
+    display: flex; flex-direction: column; justify-content: center; gap: 22px;
+  }
+  .section { }
+  .section h2 {
+    font-family: 'Playfair Display', serif; font-weight: 700; font-size: 21px;
+    letter-spacing: 4px; text-transform: uppercase; color: var(--gold);
+    text-shadow: 0 2px 6px rgba(0,0,0,.45);
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  .section h2::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(217,184,106,.6), transparent); transform: translateY(-6px); }
+  .section .tagline { font-family: 'Kaushan Script', cursive; font-size: 15px; color: var(--cream-dim);
+    margin: -1px 0 5px; }
+  .item {
+    display: grid; grid-template-columns: 1.1fr 1fr 104px; align-items: baseline; column-gap: 8px;
+    font-size: 13.5px; line-height: 1.62; text-shadow: 0 1px 4px rgba(0,0,0,.5);
+  }
+  .item .en { font-weight: 600; white-space: nowrap; }
+  .item .en small { font-weight: 500; font-size: 10.5px; color: var(--cream-dim); margin-left: 3px; }
+  .item .hy { font-family: 'Noto Serif Armenian', serif; font-size: 12px; color: var(--cream-dim); white-space: nowrap; }
+  .item .price { font-weight: 600; text-align: right; white-space: nowrap; font-variant-numeric: lining-nums tabular-nums; }
+
+  .footer {
+    position: absolute; z-index: 2; left: 76px; bottom: 150px; width: 280px;
+    font-family: 'Kaushan Script', cursive; font-size: 16px; line-height: 1.3; color: var(--cream-dim);
+    text-shadow: 0 1px 4px rgba(0,0,0,.6);
+  }
+  .footer .amd { font-family: 'Lora', serif; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 6px; opacity: .8; }
+
+  .signoff { text-align: center; margin-top: 40px; }
+  .signoff .brand { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 44px; text-shadow: 0 3px 12px rgba(0,0,0,.5); }
+  .signoff .sub { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 12px; letter-spacing: 6px; padding-left: 6px; margin-top: 6px; }
+  .signoff .rule { width: 120px; height: 1px; margin: 18px auto; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+  .signoff .tag { font-family: 'Kaushan Script', cursive; font-size: 18px; color: var(--gold); }
+
+  /* Screenshot mode: ?p=N shows only that page */
+  body.single .page { display: none; }
+  body.single .page.on { display: block; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const MENU = [
+  { title: 'Whiskey', tag: 'Classic and smooth selections', items: [
+    ['Jameson', 'Ջեյմսոն', '2200'],
+    ["Jack Daniel's", 'Ջեք Դենիելս', '2500'],
+    ["Jack Daniel's Honey", 'Ջեք Դենիելս Հանի', '2500'],
+    ['Jim Beam', 'Ջիմ Բիմ', '2200'],
+    ['Chivas 12', 'Չիվաս 12', '3500'],
+    ['Glenfiddich 12', 'Գլենֆիդիխ 12', '3500'],
+    ['Monkey Shoulder', 'Մանկի Շոուլդեր', '2800'],
+  ]},
+  { title: 'Gin', tag: 'Botanical and refreshing', items: [
+    ['Beefeater', 'Բիֆիթեր', '1800'],
+    ['MOM', 'ՄՈՄ', '2200'],
+    ['Bombay', 'Բոմբեյ', '2500'],
+    ["Hendrick's", 'Հենդրիքս', '3500'],
+  ]},
+  { title: 'Rum', tag: 'Spiced and classic', items: [
+    ['Bacardi White', 'Բակարդի Սպիտակ', '2200'],
+    ['Bacardi Black', 'Բակարդի Սև', '2500'],
+    ['Bacardi Spiced', 'Բակարդի Սփայսդ', '2000'],
+  ]},
+  { title: 'Tequila', tag: 'Smooth and vibrant', items: [
+    ['Olmeca', 'Օլմեկա', '2000'],
+    ['Don Julio Blanco', 'Դոն Խուլիո Բլանկո', '3500'],
+    ['Don Julio Reposado', 'Դոն Խուլիո Ռեպոսադո', '3600'],
+    ['Milagro Silver', 'Միլագրո Սիլվեր', '2000'],
+  ]},
+  { title: 'Cognac', tag: 'Rich heritage and flavor', items: [
+    ['Ararat Cherry', 'Արարատ Բալ', '1500'],
+    ['Ararat Apricot', 'Արարատ Ծիրան', '1500'],
+    ['Ararat Coffee', 'Արարատ Սուրճ', '1500'],
+    ['Ararat Akhtamar', 'Արարատ Ախթամար', '3000'],
+  ]},
+  { title: 'Liqueur', tag: 'Flavors to start or finish your night', items: [
+    ['Campari', 'Կամպարի', '1800'],
+    ['Jägermeister', 'Յագերմայստեր', '2000'],
+    ['Martini Rosso', 'Մարտինի Ռոսսո', '1500'],
+    ['De Kuyper', 'Դե Կայպեր', '1500'],
+    ['Midori', 'Միդորի', '2000'],
+    ['Aperol', 'Ապերոլ', '2000'],
+  ]},
+  { title: 'Cocktails', tag: 'Timeless favorites, expertly mixed', items: [
+    ['Negroni', 'Նեգրոնի', '2200'],
+    ['Long Island Iced Tea', 'Լոնգ Այլենդ Այս Թի', '2500'],
+    ['Margarita', 'Մարգարիտա', '2000'],
+    ['Daiquiri', 'Դայքիրի', '2000'],
+    ['Aperol Spritz', 'Ապերոլ Սպրից', '2000'],
+    ['Special 1', 'Հատուկ 1', '3500'],
+    ['Special 2', 'Հատուկ 2', '4500'],
+    ['Mr. Baron', 'Միստր Բարոն', '5000'],
+  ]},
+  { title: 'Wine & Champagne', tag: 'Glass 150ml / Bottle 750ml', items: [
+    ['Van Ardi Red', 'Վան Արդի Կարմիր', '1500 / 5500'],
+    ['Van Ardi White', 'Վան Արդի Սպիտակ', '1500 / 5500'],
+    ['Ijevan Vard', 'Իջևան Վարդ', '1500 / 5500'],
+    ['Zonin Prosecco', 'Զոնին Պրոսեկո', '9000'],
+  ]},
+  { title: 'Beer', tag: 'Cold and refreshing', items: [
+    ['Corona', 'Կորոնա', '1200'],
+    ['Heineken', 'Հայնեկեն', '1000'],
+    ['Miller', 'Միլլեր', '1000'],
+    ['Kilikia', 'Կիլիկիա', '800'],
+  ]},
+  { title: 'Lemonades', tag: 'Fresh, fruity and homemade', items: [
+    ['Citrus', 'Ցիտրուսային', '1500'],
+    ['Berry', 'Հատապտղային', '1500'],
+    ['Mango', 'Մանգո', '1500'],
+    ['Special', 'Հատուկ', '2000 / 3000'],
+  ]},
+  { title: 'Soft Drinks', tag: 'All-time favorites, chilled to refresh', items: [
+    ['Cola', 'Կոլա', '600'],
+    ['Fanta', 'Ֆանտա', '600'],
+    ['Sprite', 'Սփրայթ', '600'],
+    ['Natural Juice', 'Բնական հյութ', '600'],
+    ['Jermuk', 'Ջերմուկ', '500'],
+    ['Byuregh', 'Բյուրեղ', '500'],
+    ['Tonic', 'Տոնիկ', '600'],
+    ['Red Bull', 'Ռեդ Բուլ', '1200'],
+  ]},
+  { title: 'Coffee', tag: 'Rich taste, sharp moments', items: [
+    ['Oriental', 'Արևելյան', '600'],
+    ['Espresso', 'Էսպրեսո', '900'],
+    ['Americano', 'Ամերիկանո', '1000'],
+    ['Cappuccino', 'Կապուչինո', '1200'],
+    ['Latte', 'Լատտե', '1200'],
+  ]},
+  { title: 'Tea', tag: 'Green, black and herbal elegance', items: [
+    ['Black', 'Սև', '1000'],
+    ['Green', 'Կանաչ', '1000'],
+    ['Thyme and Mint', 'Ուրց և անանուխ', '1000'],
+    ['Sea Buckthorn', 'Չիչխան', '1000'],
+    ['Assam Leaf Blend', 'Ասսամ', '1200'],
+    ['Fruit', 'Մրգային', '1200'],
+    ['Japan Sencha', 'Ճապոնական Սենչա', '1200'],
+    ['Milk Oolong', 'Կաթնային Ուլոնգ', '1300'],
+  ]},
+  { title: 'Snacks', tag: 'Quick bites to match every sip', items: [
+    ['Snickers', 'Սնիկերս', '700'],
+    ['Bounty', 'Բաունտի', '700'],
+    ['Twix', 'Թվիքս', '700'],
+    ['Mars', 'Մարս', '700'],
+    ['Kinder Bueno', 'Կինդեր Բուենո', '700'],
+    ['Milky Way', 'Միլքի Վեյ', '700'],
+    ["Lay's", 'Լեյզ', '800'],
+    ['Bruschette Maretti', 'Բրուսկետե Մարետի', '1000'],
+    ['Ice Cream', 'Պաղպաղակ', '1000'],
+  ]},
+];
+
+// Which sections go on which content page
+const PAGES = [
+  ['Whiskey', 'Gin', 'Rum', 'Tequila'],
+  ['Cognac', 'Liqueur', 'Cocktails'],
+  ['Wine & Champagne', 'Beer', 'Soft Drinks'],
+  ['Lemonades', 'Coffee', 'Tea'],
+  ['Snacks'],
+];
+
+const byTitle = Object.fromEntries(MENU.map(s => [s.title, s]));
+let html = `
+  <section class="page cover">
+    <img class="bg" src="cover.jpg" alt="">
+    <div class="shade"></div>
+    <div class="title">
+      <div class="brand">Mr. Baron</div>
+      <div class="sub">BILLIARDS BAR</div>
+      <div class="rule"></div>
+      <div class="menu">MENU</div>
+      <div class="tag">Play Hard • Drink Smooth</div>
+    </div>
+  </section>`;
+for (const names of PAGES) {
+  html += `<section class="page"><img class="bg" src="table-top.jpg" alt=""><div class="shade"></div><div class="content">`;
+  for (const n of names) {
+    const s = byTitle[n];
+    html += `<div class="section"><h2>${s.title}</h2><div class="tagline">${s.tag}</div>`;
+    for (const [en, hy, price] of s.items) {
+      html += `<div class="item"><span class="en">${en}</span><span class="hy">${hy}</span><span class="price">${price}</span></div>`;
+    }
+    html += `</div>`;
+  }
+  if (names === PAGES[PAGES.length - 1]) {
+    html += `<div class="signoff"><div class="brand">Mr. Baron</div><div class="sub">BILLIARDS BAR</div><div class="rule"></div><div class="tag">Drink • Play • Chill</div></div>`;
+  }
+  html += `</div><div class="footer">Your next winning shot starts here.<div class="amd">Prices in AMD</div></div></section>`;
+}
+document.getElementById('root').innerHTML = html;
+
+const p = new URLSearchParams(location.search).get('p');
+if (p) {
+  document.body.classList.add('single');
+  document.querySelectorAll('.page')[Number(p) - 1].classList.add('on');
+}
+</script>
+</body>
+</html>
