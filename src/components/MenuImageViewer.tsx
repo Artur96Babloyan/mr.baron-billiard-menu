@@ -13,11 +13,7 @@ export default function MenuImageViewer() {
 
   const menuImages = [
     '/menuImages/Mr. Baron Billiards Bar-1.png',
-    '/menuImages/Mr. Baron Billiards Bar-2.png',
-    '/menuImages/Mr. Baron Billiards Bar-3.png',
-    '/menuImages/Mr. Baron Billiards Bar-4.png',
-    '/menuImages/Mr. Baron Billiards Bar-5.png',
-    '/menuImages/Mr. Baron Billiards Bar-6.png'
+    '/menuImages/Mr. Baron Billiards Bar-2.png'
   ];
 
   return (
@@ -69,8 +65,8 @@ export default function MenuImageViewer() {
                 <Image
                   src={image}
                   alt={`Mr. Baron Menu Page ${index + 1}`}
-                  width={800}
-                  height={1000}
+                  width={794}
+                  height={1123}
                   className={`w-full h-auto object-contain transition-opacity duration-500 ${loadedImages.has(index) ? 'opacity-100' : 'opacity-0'
                     }`}
                   priority={index === 0}
